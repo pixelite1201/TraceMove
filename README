@@ -1,0 +1,27 @@
+How to run drawing_app:-
+--------------------------
+1. make
+2. ./bin/generate_data (This will generate hash and tables inside DatabaseFiles for images inside image folder)
+3. ./drawing_app
+
+How to generate docs:-
+------------------------
+1. make docs (This will generate html folder inside db_docs and GUI_docs. Can open ./db_docs/html/index.html or ./GUI_docs/html/index.html to get details about different classes) 
+
+Steps to generate animation using drawing_app:-
+-----------------------------------------------
+(Note that image database contain only left walking person images. So, user can only get help in generating left walk animation. To generate other motion viz. right walk or run, user need to add those images inside image folder and use walk.3drun or walk.3d_leftwalk as motion capture dataset)
+
+1. Draw something. 
+2. Click on UpdateShadow to get help from Shadow image. Update image according to shadow image. Shadow visibility can be toggled using Shadow button.
+3. Once drawing is complete, click on DrawSkeleton. Draw skeleton according to the guidance given on GUI. Click on SkeletonfromDB to get most matching skeleton. Can redraw skeleton anytime by clicking on Redraw Skeleton.
+4. Click on Rig to do the automatic rigging. This will attach curves to nearest skeleton joints.
+5. Since the automatic rigging is not always perfect, click on ManualRig to do the rigging manually according to the guidance. Its important that rigging is done properly to make animation proper.
+6. Once the first frame is complete, most of the hardwork is done. Now, just click on the NextFrame to automatically generate the next frame of animation. Further editing can be done using Erase, ManualRig etc. for this frame. 
+7. Once drawing is complete, click on Play button to play the animation. If application is stopped, you can follow Step 8, to play the animation.
+8. Any saved frame can be retrieved by using File->Open from DatabaseFiles/CV* and animation can be played again till that saved frame.
+
+
+Video:- https://www.youtube.com/watch?v=q_EFZeGB3gE
+Paper:- https://dl.acm.org/citation.cfm?id=3021624
+ 

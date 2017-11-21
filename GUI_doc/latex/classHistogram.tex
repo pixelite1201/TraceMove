@@ -1,0 +1,62 @@
+\hypertarget{classHistogram}{\section{\-Histogram \-Class \-Reference}
+\label{classHistogram}\index{\-Histogram@{\-Histogram}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHistogram_ad28261323845d54ecd0d0218e7942f1f}{\hyperlink{classHistogram_ad28261323845d54ecd0d0218e7942f1f}{\-Histogram} (double, double, int, double, double, int, double, double, int)}\label{classHistogram_ad28261323845d54ecd0d0218e7942f1f}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classHistogram_a8bdace3d883806855fb401b4ed1ebeed}{increment} (double, double, double, double)
+\begin{DoxyCompactList}\small\item\em \-Will increment the histogram value on the basis of normalized magnitude of pixel. \end{DoxyCompactList}\item 
+\hypertarget{classHistogram_a9423dec20de4a1034360e813656c44c1}{void \hyperlink{classHistogram_a9423dec20de4a1034360e813656c44c1}{show} ()}\label{classHistogram_a9423dec20de4a1034360e813656c44c1}
+
+\begin{DoxyCompactList}\small\item\em \-Shows the histogram for a patch in all orientation in image form. \end{DoxyCompactList}\item 
+\hypertarget{classHistogram_aa1bdca4cadfc0b6e2810ea95379dac3e}{void \hyperlink{classHistogram_aa1bdca4cadfc0b6e2810ea95379dac3e}{blur} (int, int)}\label{classHistogram_aa1bdca4cadfc0b6e2810ea95379dac3e}
+
+\begin{DoxyCompactList}\small\item\em \-Blur the histogram to provide robustness. \end{DoxyCompactList}\item 
+\hypertarget{classHistogram_ab0eb6d0a65594891669eb4b76dc842d7}{double \hyperlink{classHistogram_ab0eb6d0a65594891669eb4b76dc842d7}{interpolate} (double, double, double)}\label{classHistogram_ab0eb6d0a65594891669eb4b76dc842d7}
+
+\begin{DoxyCompactList}\small\item\em \-Function will return interpolated value. \end{DoxyCompactList}\item 
+\hypertarget{classHistogram_a2be8d28fd551e3c2093a4d2069c8a6fa}{double \hyperlink{classHistogram_a2be8d28fd551e3c2093a4d2069c8a6fa}{b\-Final\-Value} (double, double, double)}\label{classHistogram_a2be8d28fd551e3c2093a4d2069c8a6fa}
+
+\begin{DoxyCompactList}\small\item\em \-Will perform 3\-D interpolation using \-Histogram\-:\-: \hyperlink{classHistogram_ab0eb6d0a65594891669eb4b76dc842d7}{interpolate(double,double,double)} function. \end{DoxyCompactList}\item 
+void \hyperlink{classHistogram_af415436ff0dc65684d0f48cfdff11863}{resample} (int, int, int, vector$<$ double $>$ \&)
+\begin{DoxyCompactList}\small\item\em \-Resample the histogram value to reduce its size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classHistogram_a8bdace3d883806855fb401b4ed1ebeed}{\index{\-Histogram@{\-Histogram}!increment@{increment}}
+\index{increment@{increment}!Histogram@{\-Histogram}}
+\subsubsection[{increment}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Histogram\-::increment} (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{t, }
+\item[{double}]{nor\-Magnitude}
+\end{DoxyParamCaption}
+)}}\label{classHistogram_a8bdace3d883806855fb401b4ed1ebeed}
+
+
+\-Will increment the histogram value on the basis of normalized magnitude of pixel. 
+
+\-It will first calculate the bins in which the pixel location and orientation fall and then using bilinear interpolation it add values to all the bins nearest to the calculated bin \hypertarget{classHistogram_af415436ff0dc65684d0f48cfdff11863}{\index{\-Histogram@{\-Histogram}!resample@{resample}}
+\index{resample@{resample}!Histogram@{\-Histogram}}
+\subsubsection[{resample}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Histogram\-::resample} (
+\begin{DoxyParamCaption}
+\item[{int}]{xbuck2, }
+\item[{int}]{ybuck2, }
+\item[{int}]{tbuck2, }
+\item[{vector$<$ double $>$ \&}]{vals}
+\end{DoxyParamCaption}
+)}}\label{classHistogram_af415436ff0dc65684d0f48cfdff11863}
+
+
+\-Resample the histogram value to reduce its size. 
+
+\-Instead of taking histogram values at all the bins, histogram values are taken at some sample bins. \-If the sample bins are at some intermediate values then using interpolatioin, values from neighboring bins are stored in the sample bin. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{Histogram_8h}{\-Histogram.\-h}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\-Histogram.\-cpp\end{DoxyCompactItemize}

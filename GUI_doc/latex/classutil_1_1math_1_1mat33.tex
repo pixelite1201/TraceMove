@@ -1,0 +1,165 @@
+\hypertarget{classutil_1_1math_1_1mat33}{\section{util\-:\-:math\-:\-:mat33 \-Class \-Reference}
+\label{classutil_1_1math_1_1mat33}\index{util\-::math\-::mat33@{util\-::math\-::mat33}}
+}
+
+
+\-This is a general 3x3 matrix class.  
+
+
+
+
+{\ttfamily \#include $<$matvec.\-hpp$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_a833247977b36449f4d7a608131aeedb3}{\hyperlink{classutil_1_1math_1_1mat33_a833247977b36449f4d7a608131aeedb3}{$\sim$mat33} ()}\label{classutil_1_1math_1_1mat33_a833247977b36449f4d7a608131aeedb3}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_aae87588948ff698c5b9b0c4d33274aac}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \& \hyperlink{classutil_1_1math_1_1mat33_aae87588948ff698c5b9b0c4d33274aac}{operator\mbox{[}$\,$\mbox{]}} (int index)}\label{classutil_1_1math_1_1mat33_aae87588948ff698c5b9b0c4d33274aac}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded \mbox{[}\mbox{]} operator. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_adbeb70a11f8184d4a74731e3712d7460}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1mat33_adbeb70a11f8184d4a74731e3712d7460}{operator\mbox{[}$\,$\mbox{]}} (int index) const }\label{classutil_1_1math_1_1mat33_adbeb70a11f8184d4a74731e3712d7460}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded \mbox{[}\mbox{]} operator. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a4e5702e23061356eeb8272478fe092f7}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_a4e5702e23061356eeb8272478fe092f7}{transpose} (void)}\label{classutil_1_1math_1_1mat33_a4e5702e23061356eeb8272478fe092f7}
+
+\begin{DoxyCompactList}\small\item\em \-Returns the transpose of the matrix. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a8e8805ded1df790e903db5dbb2fad1e8}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_a8e8805ded1df790e903db5dbb2fad1e8}{inverse} (void)}\label{classutil_1_1math_1_1mat33_a8e8805ded1df790e903db5dbb2fad1e8}
+
+\begin{DoxyCompactList}\small\item\em \-Returns the inverse of the matrix. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a8da8164e4b80b47c8e039d7b9d2bbc50}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \& \hyperlink{classutil_1_1math_1_1mat33_a8da8164e4b80b47c8e039d7b9d2bbc50}{map} (double($\ast$fn)(double))}\label{classutil_1_1math_1_1mat33_a8da8164e4b80b47c8e039d7b9d2bbc50}
+
+\begin{DoxyCompactList}\small\item\em \-Maps the function to every element of the matrix. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a609b696742eb3871ccd570b788688e0a}{void \hyperlink{classutil_1_1math_1_1mat33_a609b696742eb3871ccd570b788688e0a}{set} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v0, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1mat33_a609b696742eb3871ccd570b788688e0a}
+
+\begin{DoxyCompactList}\small\item\em \-Sets the value of the matrix. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_af87b9f7e3cf37af7305b0272ad027533}{void \hyperlink{classutil_1_1math_1_1mat33_af87b9f7e3cf37af7305b0272ad027533}{set} (double arr\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})}\label{classutil_1_1math_1_1mat33_af87b9f7e3cf37af7305b0272ad027533}
+
+\begin{DoxyCompactList}\small\item\em \-Sets the value of the matrix. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_aa9e09b285f5c7adcb98aec887d6edbdf}{void \hyperlink{classutil_1_1math_1_1mat33_aa9e09b285f5c7adcb98aec887d6edbdf}{print} (\-F\-I\-L\-E $\ast$file, std\-::string name)}\label{classutil_1_1math_1_1mat33_aa9e09b285f5c7adcb98aec887d6edbdf}
+
+\begin{DoxyCompactList}\small\item\em \-Print the matrix to a file. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_aa40827034ad16f60f2268645ad4035d9}{void \hyperlink{classutil_1_1math_1_1mat33_aa40827034ad16f60f2268645ad4035d9}{swap\-\_\-rows} (int i, int j)}\label{classutil_1_1math_1_1mat33_aa40827034ad16f60f2268645ad4035d9}
+
+\begin{DoxyCompactList}\small\item\em \-Swap rows i and j. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a3ac6b654e27e0f2a4a5dc741f264d7f2}{void \hyperlink{classutil_1_1math_1_1mat33_a3ac6b654e27e0f2a4a5dc741f264d7f2}{swap\-\_\-cols} (int i, int j)}\label{classutil_1_1math_1_1mat33_a3ac6b654e27e0f2a4a5dc741f264d7f2}
+
+\begin{DoxyCompactList}\small\item\em \-Swap columns i and j. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_a403a6779d3b01de177e57d47c1d979f3}{\hyperlink{classutil_1_1math_1_1mat33_a403a6779d3b01de177e57d47c1d979f3}{mat33} ()}\label{classutil_1_1math_1_1mat33_a403a6779d3b01de177e57d47c1d979f3}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_ab8e7b9217a0d8c0b9b179c44d3910851}{{\bfseries mat33} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v3)}\label{classutil_1_1math_1_1mat33_ab8e7b9217a0d8c0b9b179c44d3910851}
+
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_af61293c06efdb5e74ee9c224a68cd64c}{{\bfseries mat33} (const double d)}\label{classutil_1_1math_1_1mat33_af61293c06efdb5e74ee9c224a68cd64c}
+
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_abe5a196ee8a813766123e5614eff325c}{{\bfseries mat33} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m)}\label{classutil_1_1math_1_1mat33_abe5a196ee8a813766123e5614eff325c}
+
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_a04df60084c74336543ece5286a093751}{{\bfseries mat33} (const double a00, const double a01, const double a02, const double a10, const double a11, const double a12, const double a20, const double a21, const double a22)}\label{classutil_1_1math_1_1mat33_a04df60084c74336543ece5286a093751}
+
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_a84c33565f35fc3ab5bef208c3acdc9e0}{{\bfseries mat33} (const double a\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})}\label{classutil_1_1math_1_1mat33_a84c33565f35fc3ab5bef208c3acdc9e0}
+
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_aabda4867fd839281bac9b2bea1d98ca3}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \& \hyperlink{classutil_1_1math_1_1mat33_aabda4867fd839281bac9b2bea1d98ca3}{operator=} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m)}\label{classutil_1_1math_1_1mat33_aabda4867fd839281bac9b2bea1d98ca3}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded assignment operators. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a8bc0ae6905d964e0d6cadbb037eff301}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \& {\bfseries operator+=} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m)}\label{classutil_1_1math_1_1mat33_a8bc0ae6905d964e0d6cadbb037eff301}
+
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_a306ed83171f265ce9f9d822b4135a3a3}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \& {\bfseries operator-\/=} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m)}\label{classutil_1_1math_1_1mat33_a306ed83171f265ce9f9d822b4135a3a3}
+
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_a6440c3127d4fb5a3f3eeb40fbb06a7bb}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \& {\bfseries operator$\ast$=} (const double d)}\label{classutil_1_1math_1_1mat33_a6440c3127d4fb5a3f3eeb40fbb06a7bb}
+
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_a67b436c8767e3d49f338dae202585c02}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \& {\bfseries operator/=} (const double d)}\label{classutil_1_1math_1_1mat33_a67b436c8767e3d49f338dae202585c02}
+
+\end{DoxyCompactItemize}
+
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_afc887f0aa54e0b159a2c4993a19fdf36}{static \hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_afc887f0aa54e0b159a2c4993a19fdf36}{identity2\-D} (void)}\label{classutil_1_1math_1_1mat33_afc887f0aa54e0b159a2c4993a19fdf36}
+
+\begin{DoxyCompactList}\small\item\em 2\-D identity matrix \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_aebca188a2f554b0799dff8f2fc0d72e4}{static \hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_aebca188a2f554b0799dff8f2fc0d72e4}{rotation2\-D} (\hyperlink{classutil_1_1math_1_1vec2}{vec2} \&center, double theta)}\label{classutil_1_1math_1_1mat33_aebca188a2f554b0799dff8f2fc0d72e4}
+
+\begin{DoxyCompactList}\small\item\em 2\-D rotation matrix (postmultiply column vector) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_abf6f4e4217c5c86d1c83ee6e1e25de97}{static \hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_abf6f4e4217c5c86d1c83ee6e1e25de97}{translation2\-D} (double tx, double ty)}\label{classutil_1_1math_1_1mat33_abf6f4e4217c5c86d1c83ee6e1e25de97}
+
+\begin{DoxyCompactList}\small\item\em 2\-D translation matrix (postmultiply column vector) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_ad3aeb80fb940785f461890a1d23ac167}{static \hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_ad3aeb80fb940785f461890a1d23ac167}{translation2\-D} (\hyperlink{classutil_1_1math_1_1vec2}{vec2} \&v)}\label{classutil_1_1math_1_1mat33_ad3aeb80fb940785f461890a1d23ac167}
+
+\begin{DoxyCompactList}\small\item\em 2\-D translation matrix (postmultiply column vector) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a4990a58195f77910ca48eb940d6f8132}{static \hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_a4990a58195f77910ca48eb940d6f8132}{scaling2\-D} (\hyperlink{classutil_1_1math_1_1vec2}{vec2} \&v)}\label{classutil_1_1math_1_1mat33_a4990a58195f77910ca48eb940d6f8132}
+
+\begin{DoxyCompactList}\small\item\em 2\-D scaling matrix (postmultiply column vector) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_a1aaa6fe4168c5d6e50f7b48ee418398f}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} {\bfseries row} \mbox{[}3\mbox{]}}\label{classutil_1_1math_1_1mat33_a1aaa6fe4168c5d6e50f7b48ee418398f}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_ab65dfe6ab38be57b49c517e0283c521b}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_ab65dfe6ab38be57b49c517e0283c521b}{operator-\/} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m)}\label{classutil_1_1math_1_1mat33_ab65dfe6ab38be57b49c517e0283c521b}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded unary negation. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a6a1ab61692f696395129af5c074b16ef}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_a6a1ab61692f696395129af5c074b16ef}{operator+} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m1, const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m2)}\label{classutil_1_1math_1_1mat33_a6a1ab61692f696395129af5c074b16ef}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded addition. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a667518a9ef5ed9979ce835cc60e24f49}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_a667518a9ef5ed9979ce835cc60e24f49}{operator-\/} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m1, const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m2)}\label{classutil_1_1math_1_1mat33_a667518a9ef5ed9979ce835cc60e24f49}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded subtraction. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a1be11c8b6a31758e06d9d8b07420aa65}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_a1be11c8b6a31758e06d9d8b07420aa65}{operator$\ast$} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m, const double d)}\label{classutil_1_1math_1_1mat33_a1be11c8b6a31758e06d9d8b07420aa65}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded multiplication (matrix \& constant) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_abff2a6293ffbe0b6077ece21356b6a3f}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_abff2a6293ffbe0b6077ece21356b6a3f}{operator$\ast$} (const double d, const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m)}\label{classutil_1_1math_1_1mat33_abff2a6293ffbe0b6077ece21356b6a3f}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded multiplication (constant \& matrix) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_af9316334ff81fdbaf28a6912113da00a}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_af9316334ff81fdbaf28a6912113da00a}{operator$\ast$} (\hyperlink{classutil_1_1math_1_1mat33}{mat33} m1, \hyperlink{classutil_1_1math_1_1mat33}{mat33} m2)}\label{classutil_1_1math_1_1mat33_af9316334ff81fdbaf28a6912113da00a}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded multiplication (matrix \& matrix) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a1f1bc7d69850efd0d2c34173b284252b}{\hyperlink{classutil_1_1math_1_1mat33}{mat33} \hyperlink{classutil_1_1math_1_1mat33_a1f1bc7d69850efd0d2c34173b284252b}{operator/} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m, const double d)}\label{classutil_1_1math_1_1mat33_a1f1bc7d69850efd0d2c34173b284252b}
+
+\begin{DoxyCompactList}\small\item\em \-Oveloaded division (matrix \& constant) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_aeb05da60a81312c57d0bb5b723b7d5a3}{bool \hyperlink{classutil_1_1math_1_1mat33_aeb05da60a81312c57d0bb5b723b7d5a3}{operator==} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m1, const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m2)}\label{classutil_1_1math_1_1mat33_aeb05da60a81312c57d0bb5b723b7d5a3}
+
+\begin{DoxyCompactList}\small\item\em \-Matrix equality. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_a9e9105591db331242273e057417ea669}{bool \hyperlink{classutil_1_1math_1_1mat33_a9e9105591db331242273e057417ea669}{operator!=} (const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m1, const \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m2)}\label{classutil_1_1math_1_1mat33_a9e9105591db331242273e057417ea669}
+
+\begin{DoxyCompactList}\small\item\em \-Matrix inequality. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_aa5448a9c418f69b3c35a538663ceda17}{void \hyperlink{classutil_1_1math_1_1mat33_aa5448a9c418f69b3c35a538663ceda17}{swap} (\hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m1, \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&m2)}\label{classutil_1_1math_1_1mat33_aa5448a9c418f69b3c35a538663ceda17}
+
+\begin{DoxyCompactList}\small\item\em \-Swap matrices m1 and m2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1mat33_ac78a1894e9f2ea662209f72812e2a399}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1mat33_ac78a1894e9f2ea662209f72812e2a399}{operator$\ast$} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v, \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&\-M)}\label{classutil_1_1math_1_1mat33_ac78a1894e9f2ea662209f72812e2a399}
+
+\begin{DoxyCompactList}\small\item\em \-Necessary friend declarations. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1mat33_aa0f2b7eb53427e197a5cec77e5c0203a}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} {\bfseries operator$\ast$} (\hyperlink{classutil_1_1math_1_1mat33}{mat33} \&\-M, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v)}\label{classutil_1_1math_1_1mat33_aa0f2b7eb53427e197a5cec77e5c0203a}
+
+\end{DoxyCompactItemize}
+
+
+
+\subsection{\-Detailed \-Description}
+\-This is a general 3x3 matrix class. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{matvec_8hpp}{matvec.\-hpp}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/matvec.\-cpp\end{DoxyCompactItemize}

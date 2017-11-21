@@ -1,0 +1,101 @@
+\hypertarget{classutil_1_1common_1_1error}{\section{util\-:\-:common\-:\-:error \-Class \-Reference}
+\label{classutil_1_1common_1_1error}\index{util\-::common\-::error@{util\-::common\-::error}}
+}
+
+
+\-The general error class.  
+
+
+
+
+{\ttfamily \#include $<$error.\-hpp$>$}
+
+\-Inheritance diagram for util\-:\-:common\-:\-:error\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classutil_1_1common_1_1error}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1common_1_1error_afaacc98d128e170ab3f0164d62b939ed}{virtual \hyperlink{classutil_1_1common_1_1error_afaacc98d128e170ab3f0164d62b939ed}{$\sim$error} ()}\label{classutil_1_1common_1_1error_afaacc98d128e170ab3f0164d62b939ed}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1common_1_1error_ad09c475e98c830b12386f14f8263927c}{virtual void \hyperlink{classutil_1_1common_1_1error_ad09c475e98c830b12386f14f8263927c}{process} () const =0}\label{classutil_1_1common_1_1error_ad09c475e98c830b12386f14f8263927c}
+
+\begin{DoxyCompactList}\small\item\em \-Error processing method. \-See derived classes for details. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1common_1_1error_ad3395a0219f1a729d51e0a3319c348b3}{virtual \hyperlink{classutil_1_1common_1_1error_ad3395a0219f1a729d51e0a3319c348b3}{operator std\-::string} () const }\label{classutil_1_1common_1_1error_ad3395a0219f1a729d51e0a3319c348b3}
+
+\begin{DoxyCompactList}\small\item\em \-The overloaded string type casting operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classutil_1_1common_1_1error_a50f2c51ec896fdd16280c5bc0b894d6c}{propogate\-\_\-error} (\hyperlink{classutil_1_1common_1_1error}{error} const $\ast$e)
+\item 
+static void \hyperlink{classutil_1_1common_1_1error_a110cf0bb4bff2b185d72e4a45dac21cc}{absorb\-\_\-error} (\hyperlink{classutil_1_1common_1_1error}{error} const $\ast$e)
+\item 
+static void \hyperlink{classutil_1_1common_1_1error_a9ba845c0e9e65f1bdba09c805f458d4e}{halt\-\_\-on\-\_\-error} (\hyperlink{classutil_1_1common_1_1error}{error} const $\ast$e)
+\item 
+static void \hyperlink{classutil_1_1common_1_1error_a21000e1fac6d6721d29752be0139c105}{handle\-\_\-error} (\hyperlink{classutil_1_1common_1_1error}{error} const $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1common_1_1error_a09a1f3ece8a1cfa11b6cfe808810f918}{\hyperlink{classutil_1_1common_1_1error_a09a1f3ece8a1cfa11b6cfe808810f918}{error} (char const $\ast$\-\_\-error\-\_\-msg)}\label{classutil_1_1common_1_1error_a09a1f3ece8a1cfa11b6cfe808810f918}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1common_1_1error_a60addfad97aa8d99f59ac8bea242e548}{std\-::string \hyperlink{classutil_1_1common_1_1error_a60addfad97aa8d99f59ac8bea242e548}{error\-\_\-msg}}\label{classutil_1_1common_1_1error_a60addfad97aa8d99f59ac8bea242e548}
+
+\begin{DoxyCompactList}\small\item\em \-The error message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1common_1_1error_a9986db03a548ff6e2aee1541fef8b962}{std\-::ostream \& \hyperlink{classutil_1_1common_1_1error_a9986db03a548ff6e2aee1541fef8b962}{operator$<$$<$} (std\-::ostream \&str, \hyperlink{classutil_1_1common_1_1error}{error} const \&e)}\label{classutil_1_1common_1_1error_a9986db03a548ff6e2aee1541fef8b962}
+
+\begin{DoxyCompactList}\small\item\em \-The overloaded $<$$<$ operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-The general error class. 
+
+\-This is a singleton class and hence an object of this class cannot be directly instantiated. \-Only one of its derived classes can be directly instantiated. \-The class consists of the error message, a virtual general error processing method, and static error handlers. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classutil_1_1common_1_1error_a110cf0bb4bff2b185d72e4a45dac21cc}{\index{util\-::common\-::error@{util\-::common\-::error}!absorb\-\_\-error@{absorb\-\_\-error}}
+\index{absorb\-\_\-error@{absorb\-\_\-error}!util::common::error@{util\-::common\-::error}}
+\subsubsection[{absorb\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf util\-::common\-::error\-::absorb\-\_\-error} (
+\begin{DoxyParamCaption}
+\item[{{\bf error} const $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classutil_1_1common_1_1error_a110cf0bb4bff2b185d72e4a45dac21cc}
+\-This error handler absorbs the error and processes it as is declared in the processing method \hypertarget{classutil_1_1common_1_1error_a9ba845c0e9e65f1bdba09c805f458d4e}{\index{util\-::common\-::error@{util\-::common\-::error}!halt\-\_\-on\-\_\-error@{halt\-\_\-on\-\_\-error}}
+\index{halt\-\_\-on\-\_\-error@{halt\-\_\-on\-\_\-error}!util::common::error@{util\-::common\-::error}}
+\subsubsection[{halt\-\_\-on\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf util\-::common\-::error\-::halt\-\_\-on\-\_\-error} (
+\begin{DoxyParamCaption}
+\item[{{\bf error} const $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classutil_1_1common_1_1error_a9ba845c0e9e65f1bdba09c805f458d4e}
+\-This error handler causes the execution to halt, irrespective of the type of the error \hypertarget{classutil_1_1common_1_1error_a21000e1fac6d6721d29752be0139c105}{\index{util\-::common\-::error@{util\-::common\-::error}!handle\-\_\-error@{handle\-\_\-error}}
+\index{handle\-\_\-error@{handle\-\_\-error}!util::common::error@{util\-::common\-::error}}
+\subsubsection[{handle\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf util\-::common\-::error\-::handle\-\_\-error} (
+\begin{DoxyParamCaption}
+\item[{{\bf error} const $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classutil_1_1common_1_1error_a21000e1fac6d6721d29752be0139c105}
+\-This error handler propogates warning\-\_\-errors, and halts on fatal errors. \hypertarget{classutil_1_1common_1_1error_a50f2c51ec896fdd16280c5bc0b894d6c}{\index{util\-::common\-::error@{util\-::common\-::error}!propogate\-\_\-error@{propogate\-\_\-error}}
+\index{propogate\-\_\-error@{propogate\-\_\-error}!util::common::error@{util\-::common\-::error}}
+\subsubsection[{propogate\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf util\-::common\-::error\-::propogate\-\_\-error} (
+\begin{DoxyParamCaption}
+\item[{{\bf error} const $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classutil_1_1common_1_1error_a50f2c51ec896fdd16280c5bc0b894d6c}
+\-This error handler propogates the error to the next higher level in the program hierarchy. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{error_8hpp}{error.\-hpp}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/error.\-cpp\end{DoxyCompactItemize}

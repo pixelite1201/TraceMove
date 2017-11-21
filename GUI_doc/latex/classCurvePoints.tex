@@ -1,0 +1,160 @@
+\hypertarget{classCurvePoints}{\section{\-Curve\-Points \-Class \-Reference}
+\label{classCurvePoints}\index{\-Curve\-Points@{\-Curve\-Points}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCurvePoints_a7554f9637c23e73ea598f93992138d8e}{\hyperlink{classCurvePoints_a7554f9637c23e73ea598f93992138d8e}{\-Curve\-Points} ()}\label{classCurvePoints_a7554f9637c23e73ea598f93992138d8e}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hyperlink{structPOINT}{\-P\-O\-I\-N\-T} \hyperlink{classCurvePoints_a8079243e2e447c8a8bbc007fb373e051}{erase\-\_\-curve2} (\hyperlink{structPOINT}{\-P\-O\-I\-N\-T})
+\begin{DoxyCompactList}\small\item\em \-Erase the curve after rigging is done. \end{DoxyCompactList}\item 
+\hyperlink{structPOINT}{\-P\-O\-I\-N\-T} \hyperlink{classCurvePoints_ada5417c6f98b520fc5e5ef091ee1b731}{min\-\_\-dist\-\_\-curve\-Points} (\hyperlink{structPOINT}{\-P\-O\-I\-N\-T})
+\item 
+\hypertarget{classCurvePoints_a0a727d9a92c3a95973841ae164f27bdc}{void \hyperlink{classCurvePoints_a0a727d9a92c3a95973841ae164f27bdc}{mid\-Pt\-\_\-helper} (int, int, \hyperlink{classDrawnSkeleton}{\-Drawn\-Skeleton} \&)}\label{classCurvePoints_a0a727d9a92c3a95973841ae164f27bdc}
+
+\begin{DoxyCompactList}\small\item\em \-Helper function to assign\-\_\-skeleton\-\_\-mid\-Pt function. \end{DoxyCompactList}\item 
+void \hyperlink{classCurvePoints_a512ece764651989e4eb6858e05574937}{assign\-\_\-skeleton\-\_\-mid\-Pt} (\hyperlink{classDrawnSkeleton}{\-Drawn\-Skeleton})
+\begin{DoxyCompactList}\small\item\em \-Divide the skeleton joints into subjoints. \end{DoxyCompactList}\item 
+void \hyperlink{classCurvePoints_adb767f38b5c7754f0fc40a00d63bc93f}{rigging\-Per\-Curve} (vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$)
+\item 
+void \hyperlink{classCurvePoints_ab2cc26e0f1bddfb23ea3e82246621768}{rigging\-Per\-Curve} (vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$, vector$<$ int $>$)
+\item 
+void \hyperlink{classCurvePoints_a12adb753c1a2d96adcda443d3e0c5655}{manual\-Rigging} (vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$, int)
+\item 
+\hypertarget{classCurvePoints_acfbf211b23e8ef631d2d89dda4ab9cc8}{void \hyperlink{classCurvePoints_acfbf211b23e8ef631d2d89dda4ab9cc8}{rigging} ()}\label{classCurvePoints_acfbf211b23e8ef631d2d89dda4ab9cc8}
+
+\begin{DoxyCompactList}\small\item\em \-Call rigging\-Per\-Curve function to rig different curves. \end{DoxyCompactList}\item 
+void \hyperlink{classCurvePoints_a827534fd2a3895837a2220c148b5269d}{divide\-Curve} ()
+\begin{DoxyCompactList}\small\item\em \-Divide the rig\-Points into final\-\_\-rig\-Points using threshold value. \end{DoxyCompactList}\item 
+\hypertarget{classCurvePoints_afe09c12dda9492a0dde602b7353c4a44}{float \hyperlink{classCurvePoints_afe09c12dda9492a0dde602b7353c4a44}{find\-\_\-dist} (\hyperlink{structPOINT}{\-P\-O\-I\-N\-T}, \hyperlink{structPOINT}{\-P\-O\-I\-N\-T})}\label{classCurvePoints_afe09c12dda9492a0dde602b7353c4a44}
+
+\begin{DoxyCompactList}\small\item\em \-Find distance between two points. \end{DoxyCompactList}\item 
+int \hyperlink{classCurvePoints_a053b7e692d6d9a2d72de8eb967dd3de9}{erase\-\_\-curve} (\hyperlink{structPOINT}{\-P\-O\-I\-N\-T})
+\begin{DoxyCompactList}\small\item\em \-Erase the curve after rigging is not done. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCurvePoints_a82f3109e4d16251c4f1111f56701c861}{vector$<$ vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ $>$ \hyperlink{classCurvePoints_a82f3109e4d16251c4f1111f56701c861}{skeleton\-\_\-mid\-Pt}}\label{classCurvePoints_a82f3109e4d16251c4f1111f56701c861}
+
+\begin{DoxyCompactList}\small\item\em \-This will store the subjoint of each skeleton joint. \end{DoxyCompactList}\item 
+\hypertarget{classCurvePoints_aa9adedc1a7b074e9092ffa8e088aaa1f}{vector$<$ vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ $>$ \hyperlink{classCurvePoints_aa9adedc1a7b074e9092ffa8e088aaa1f}{curve\-Points}}\label{classCurvePoints_aa9adedc1a7b074e9092ffa8e088aaa1f}
+
+\begin{DoxyCompactList}\small\item\em \-This will store the original curvepoints drawn by user. \end{DoxyCompactList}\item 
+\hypertarget{classCurvePoints_a7a0e65db4b98a030d9468269e7928f50}{vector$<$ vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ $>$ \hyperlink{classCurvePoints_a7a0e65db4b98a030d9468269e7928f50}{curve\-Points2}}\label{classCurvePoints_a7a0e65db4b98a030d9468269e7928f50}
+
+\begin{DoxyCompactList}\small\item\em \-This will store the bezier curvepoints fitted on the curvepoints drawn by user and stored in curve\-Points. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ $>$ \hyperlink{classCurvePoints_a53f5fe4fe16b4a2bb4c3bb045a7f64a3}{rig\-Points}
+\begin{DoxyCompactList}\small\item\em \-This will store the curvepoints on the basis of their distance to the skeleton subjoints stored in skeleton\-\_\-mid\-Pt. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ $>$ \hyperlink{classCurvePoints_ac689fabd6c2d26c074fba5078946d8f6}{rig\-Points\-\_\-dual\-Wt}
+\begin{DoxyCompactList}\small\item\em \-This will store the curvepoints that are nearest to original skeleton joints instead of sub joints. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ pair$<$ vector\*
+$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$, bool $>$ $>$ $>$ \hyperlink{classCurvePoints_accc80a4b1d563df4709210c4196c3f8d}{final\-\_\-rig\-Points}
+\begin{DoxyCompactList}\small\item\em \-This will store the curvepoints after finally dividing them into separate curves using threshold value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classCurvePoints_a512ece764651989e4eb6858e05574937}{\index{\-Curve\-Points@{\-Curve\-Points}!assign\-\_\-skeleton\-\_\-mid\-Pt@{assign\-\_\-skeleton\-\_\-mid\-Pt}}
+\index{assign\-\_\-skeleton\-\_\-mid\-Pt@{assign\-\_\-skeleton\-\_\-mid\-Pt}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{assign\-\_\-skeleton\-\_\-mid\-Pt}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Curve\-Points\-::assign\-\_\-skeleton\-\_\-mid\-Pt} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Drawn\-Skeleton}}]{d\-S}
+\end{DoxyParamCaption}
+)}}\label{classCurvePoints_a512ece764651989e4eb6858e05574937}
+
+
+\-Divide the skeleton joints into subjoints. 
+
+\-With the help of mid\-Pt\-\_\-helper function, it will take two end points of bones stored in \-Skeleton\-Nodes and generate four more subjoints at equal distance \hypertarget{classCurvePoints_a827534fd2a3895837a2220c148b5269d}{\index{\-Curve\-Points@{\-Curve\-Points}!divide\-Curve@{divide\-Curve}}
+\index{divide\-Curve@{divide\-Curve}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{divide\-Curve}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Curve\-Points\-::divide\-Curve} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCurvePoints_a827534fd2a3895837a2220c148b5269d}
+
+
+\-Divide the rig\-Points into final\-\_\-rig\-Points using threshold value. 
+
+\-It will take the curve store in rig\-Points and rig\-Points\-\_\-dual\-Wt and further divide them into different curves if the distance between neighboring points is greater than threshold. \-Thus we will get 3\-D vector, with first index showing the skeleton joint with which its associated, second index is the number of different curves associated to that skeleton joint and third index is a pair of vector and boolean value such that vector consist of all curvepoint and boolean value denote whether the curve is associated with single or double bone. \hypertarget{classCurvePoints_a053b7e692d6d9a2d72de8eb967dd3de9}{\index{\-Curve\-Points@{\-Curve\-Points}!erase\-\_\-curve@{erase\-\_\-curve}}
+\index{erase\-\_\-curve@{erase\-\_\-curve}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{erase\-\_\-curve}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Curve\-Points\-::erase\-\_\-curve} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-P\-O\-I\-N\-T}}]{tmp}
+\end{DoxyParamCaption}
+)}}\label{classCurvePoints_a053b7e692d6d9a2d72de8eb967dd3de9}
+
+
+\-Erase the curve after rigging is not done. 
+
+\-It will take the point clicked by the user, search the nearest curve to it and remove it from curve\-Points. \hypertarget{classCurvePoints_a8079243e2e447c8a8bbc007fb373e051}{\index{\-Curve\-Points@{\-Curve\-Points}!erase\-\_\-curve2@{erase\-\_\-curve2}}
+\index{erase\-\_\-curve2@{erase\-\_\-curve2}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{erase\-\_\-curve2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-P\-O\-I\-N\-T} {\bf \-Curve\-Points\-::erase\-\_\-curve2} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-P\-O\-I\-N\-T}}]{tmp}
+\end{DoxyParamCaption}
+)}}\label{classCurvePoints_a8079243e2e447c8a8bbc007fb373e051}
+
+
+\-Erase the curve after rigging is done. 
+
+\-It will take the point clicked by the user, search the nearest curve to it and remove it from final\-\_\-rig\-Points \hypertarget{classCurvePoints_a12adb753c1a2d96adcda443d3e0c5655}{\index{\-Curve\-Points@{\-Curve\-Points}!manual\-Rigging@{manual\-Rigging}}
+\index{manual\-Rigging@{manual\-Rigging}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{manual\-Rigging}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Curve\-Points\-::manual\-Rigging} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf \-P\-O\-I\-N\-T} $>$}]{curve\-Point, }
+\item[{int}]{skeleton}
+\end{DoxyParamCaption}
+)}}\label{classCurvePoints_a12adb753c1a2d96adcda443d3e0c5655}
+\-The function will take curve and skeleton joint as input. \-To reassociate curvepoints to the skeleton joint selected by user, it will create a vector of skeleton joint along with 2 more skeleton joint linked with user selected skeleton joint and pass the curve and the to the function rigging\-Per\-Curve to do the rigging \hypertarget{classCurvePoints_ada5417c6f98b520fc5e5ef091ee1b731}{\index{\-Curve\-Points@{\-Curve\-Points}!min\-\_\-dist\-\_\-curve\-Points@{min\-\_\-dist\-\_\-curve\-Points}}
+\index{min\-\_\-dist\-\_\-curve\-Points@{min\-\_\-dist\-\_\-curve\-Points}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{min\-\_\-dist\-\_\-curve\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-P\-O\-I\-N\-T} {\bf \-Curve\-Points\-::min\-\_\-dist\-\_\-curve\-Points} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-P\-O\-I\-N\-T}}]{select}
+\end{DoxyParamCaption}
+)}}\label{classCurvePoints_ada5417c6f98b520fc5e5ef091ee1b731}
+\-It will take the user clicked point as input and return the index of the curve nearest to this clicked point from final\-\_\-rig\-Points \hypertarget{classCurvePoints_adb767f38b5c7754f0fc40a00d63bc93f}{\index{\-Curve\-Points@{\-Curve\-Points}!rigging\-Per\-Curve@{rigging\-Per\-Curve}}
+\index{rigging\-Per\-Curve@{rigging\-Per\-Curve}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{rigging\-Per\-Curve}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Curve\-Points\-::rigging\-Per\-Curve} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf \-P\-O\-I\-N\-T} $>$}]{curve\-Point}
+\end{DoxyParamCaption}
+)}}\label{classCurvePoints_adb767f38b5c7754f0fc40a00d63bc93f}
+\-It will take the curve as input and attached the curvepoints to the nearest skeleton joint and store them in rig\-Points and rig\-Points\-\_\-dual\-Wt depending on the nearest skeleton joint \hypertarget{classCurvePoints_ab2cc26e0f1bddfb23ea3e82246621768}{\index{\-Curve\-Points@{\-Curve\-Points}!rigging\-Per\-Curve@{rigging\-Per\-Curve}}
+\index{rigging\-Per\-Curve@{rigging\-Per\-Curve}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{rigging\-Per\-Curve}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Curve\-Points\-::rigging\-Per\-Curve} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf \-P\-O\-I\-N\-T} $>$}]{curve\-Point, }
+\item[{vector$<$ int $>$}]{\-P}
+\end{DoxyParamCaption}
+)}}\label{classCurvePoints_ab2cc26e0f1bddfb23ea3e82246621768}
+\-It will be used during manual rigging. \-Input is the curve and the vector of user clicked skeleton joint along with two more joints linked to skeleton joint. \-The function will search for the nearest distance skeleton joint in the vector of joints passed in iniput. \-It will associate curvepoints to the skeleton joints using rig\-Points and rig\-Points\-\_\-dual\-Wt. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classCurvePoints_accc80a4b1d563df4709210c4196c3f8d}{\index{\-Curve\-Points@{\-Curve\-Points}!final\-\_\-rig\-Points@{final\-\_\-rig\-Points}}
+\index{final\-\_\-rig\-Points@{final\-\_\-rig\-Points}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{final\-\_\-rig\-Points}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$pair$<$vector$<${\bf \-P\-O\-I\-N\-T}$>$,bool$>$ $>$ $>$ {\bf \-Curve\-Points\-::final\-\_\-rig\-Points}}}\label{classCurvePoints_accc80a4b1d563df4709210c4196c3f8d}
+
+
+\-This will store the curvepoints after finally dividing them into separate curves using threshold value. 
+
+\-A boolean value is store with every curve that told whether the curve is associated with single bone or two bones. \hypertarget{classCurvePoints_a53f5fe4fe16b4a2bb4c3bb045a7f64a3}{\index{\-Curve\-Points@{\-Curve\-Points}!rig\-Points@{rig\-Points}}
+\index{rig\-Points@{rig\-Points}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{rig\-Points}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<${\bf \-P\-O\-I\-N\-T}$>$ $>$ {\bf \-Curve\-Points\-::rig\-Points}}}\label{classCurvePoints_a53f5fe4fe16b4a2bb4c3bb045a7f64a3}
+
+
+\-This will store the curvepoints on the basis of their distance to the skeleton subjoints stored in skeleton\-\_\-mid\-Pt. 
+
+\-Each of the subjoint has a representative joint and the curvepoints will get associated to that representative joint. \-If they are associated with subjoint of joint 0, then they will be stored in rig\-Points\mbox{[}0\mbox{]} and so on. \hypertarget{classCurvePoints_ac689fabd6c2d26c074fba5078946d8f6}{\index{\-Curve\-Points@{\-Curve\-Points}!rig\-Points\-\_\-dual\-Wt@{rig\-Points\-\_\-dual\-Wt}}
+\index{rig\-Points\-\_\-dual\-Wt@{rig\-Points\-\_\-dual\-Wt}!CurvePoints@{\-Curve\-Points}}
+\subsubsection[{rig\-Points\-\_\-dual\-Wt}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<${\bf \-P\-O\-I\-N\-T}$>$ $>$ {\bf \-Curve\-Points\-::rig\-Points\-\_\-dual\-Wt}}}\label{classCurvePoints_ac689fabd6c2d26c074fba5078946d8f6}
+
+
+\-This will store the curvepoints that are nearest to original skeleton joints instead of sub joints. 
+
+\-They are stored separately as they are associated with two bones joining the joint. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{CurvePoints_8h}{\-Curve\-Points.\-h}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\-Curve\-Points.\-cpp\end{DoxyCompactItemize}

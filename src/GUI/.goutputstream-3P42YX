@@ -1,0 +1,22 @@
+#ifndef DRAWNSKELETON_H_
+#define DRAWNSKELETON_H_
+#include<vector>
+#include "Point.h"
+using namespace std;
+
+class DrawnSkeleton{
+public:
+int node_count;
+vector<POINT> old_skeletonNodes;
+vector<POINT> skeletonNodes;
+vector<POINT> diff;
+vector<float> bone_inverse_scale;
+float base_x,base_y;
+vector<POINT> newPosition;
+DrawnSkeleton();
+int min_dist_skeletonNodes(POINT);
+float find_dist(POINT,POINT);
+void calculate_newP2(vector<POINT>);
+void update();
+};
+#endif

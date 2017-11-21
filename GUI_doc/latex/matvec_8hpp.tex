@@ -1,0 +1,61 @@
+\hypertarget{matvec_8hpp}{\section{/home/priyanka/\-Dataset25/src/\-G\-U\-I/matvec.hpp \-File \-Reference}
+\label{matvec_8hpp}\index{/home/priyanka/\-Dataset25/src/\-G\-U\-I/matvec.\-hpp@{/home/priyanka/\-Dataset25/src/\-G\-U\-I/matvec.\-hpp}}
+}
+
+
+\-This file contains 3 vector and 2 matrix class definitions \-The vector classes are vec2, vec3 \& vec4. \-The matrix classes are mat33 \& mat44.  
+
+
+{\ttfamily \#include $<$cstdio$>$}\*
+{\ttfamily \#include $<$string$>$}\*
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classutil_1_1math_1_1vec2}{util\-::math\-::vec2}
+\begin{DoxyCompactList}\small\item\em \-This is a general 2\-D vector class. \end{DoxyCompactList}\item 
+class \hyperlink{classutil_1_1math_1_1vec3}{util\-::math\-::vec3}
+\begin{DoxyCompactList}\small\item\em \-This is a general 3\-D vector class. \end{DoxyCompactList}\item 
+class \hyperlink{classutil_1_1math_1_1vec4}{util\-::math\-::vec4}
+\begin{DoxyCompactList}\small\item\em \-This is a general 4\-D vector class. \end{DoxyCompactList}\item 
+class \hyperlink{classutil_1_1math_1_1mat33}{util\-::math\-::mat33}
+\begin{DoxyCompactList}\small\item\em \-This is a general 3x3 matrix class. \end{DoxyCompactList}\item 
+class \hyperlink{classutil_1_1math_1_1mat44}{util\-::math\-::mat44}
+\begin{DoxyCompactList}\small\item\em \-This is a general 4x4 matrix class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceutil}{util}
+\begin{DoxyCompactList}\small\item\em \-The namespace shared by all support classes that form lib\-Util. \end{DoxyCompactList}\item 
+namespace \hyperlink{namespaceutil_1_1math}{util\-::math}
+\begin{DoxyCompactList}\small\item\em \-The namespace containing all the math classes in lib\-Util. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries \-X}, 
+{\bfseries \-Y}, 
+{\bfseries \-Z}, 
+{\bfseries \-W}
+ \}
+\begin{DoxyCompactList}\small\item\em \-The \-X,\-Y,\-Z,\-W coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceutil_1_1math_a341939326d8a0061b87c80ad65ee2bbb}{const double \hyperlink{namespaceutil_1_1math_a341939326d8a0061b87c80ad65ee2bbb}{util\-::math\-::\-E\-P\-S\-I\-L\-O\-N} = 1e-\/6}\label{namespaceutil_1_1math_a341939326d8a0061b87c80ad65ee2bbb}
+
+\begin{DoxyCompactList}\small\item\em \-This is used for comparison amongst floating pt. values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This file contains 3 vector and 2 matrix class definitions \-The vector classes are vec2, vec3 \& vec4. \-The matrix classes are mat33 \& mat44. \-All standard arithmetic operations are defined. '$\ast$' is used for the dot product of two vectors and two matrices. '$^\wedge$' is used for the cross product of two vectors.
+
+\-Additional functions include length(), normalize(), homogenize for vectors, and print(), set(), map() for all classes.
+
+\-There are the transpose() \& inverse for matrices, but note that they do not actually change the matrix.
+
+\-When multiplied with a matrix, a vector is treated as a row vector if it precedes the matrix (v$\ast$\-M), and as a column vector if it follows the matrix (\-M$\ast$v).
+
+\-Matrices are stored in row-\/major form.
+
+\-A vector of one dimension (2d, 3d, or 4d) can be cast to a vector of a higher or lower dimension. \-If casting to a higher dimension, the new component is set by default to 1.\-0, unless a value is specified\-: vec3 a(1.\-0, 2.\-0, 3.\-0 ); vec4 b( a, 4.\-0 ); // now b == \{1.\-0, 2.\-0, 3.\-0, 4.\-0\}; \-When casting to a lower dimension, the vector is homogenized in the lower dimension. \-E.\-g., if a 4d \{\-X,\-Y,\-Z,\-W\} is cast to 3d, the resulting vector is \{\-X/\-W, \-Y/\-W, \-Z/\-W\}. \-It is up to the user to ensure the fourth component is not zero before casting.
+
+\-Authors\-: \-Jean-\/\-Francois \-Doue (\-Graphics \-Gems \-I\-V), \-Paul \-Rademacher \-Revised\-: \-Parag \-Chaudhuri 

@@ -1,0 +1,61 @@
+\hypertarget{classResultSet}{\section{\-Result\-Set \-Class \-Reference}
+\label{classResultSet}\index{\-Result\-Set@{\-Result\-Set}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classResultSet_ae169a7b3c0631dfd5048ec55c46a669e}{{\bfseries \-Result\-Set} (int)}\label{classResultSet_ae169a7b3c0631dfd5048ec55c46a669e}
+
+\item 
+void \hyperlink{classResultSet_a4eca226d7033e0faa1c29911829a657c}{add} (\hyperlink{classEntry}{\-Entry})
+\begin{DoxyCompactList}\small\item\em \-Function to add matching entry to unorderer\-\_\-map \hyperlink{classResultSet_ad62d4fd4f4e32c4dec4ddfd6ee1ec4dc}{\-Result\-Set\-::m}. \end{DoxyCompactList}\item 
+void \hyperlink{classResultSet_a81983f9f4106c9202239f766994d5de0}{sort} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ \hyperlink{classEntry}{\-Entry} $>$ $>$ \hyperlink{classResultSet_af94fb0e3ab0007c7c0369e6fbb3a2f86}{results}
+\begin{DoxyCompactList}\small\item\em \-Store all the result matching entries from database for the corresponding user drawn patches. \end{DoxyCompactList}\item 
+unordered\-\_\-map$<$ \hyperlink{classEntry}{\-Entry}, int, \*
+\hyperlink{classHasher}{\-Hasher}, \hyperlink{classEqualFn}{\-Equal\-Fn} $>$ \hyperlink{classResultSet_ad62d4fd4f4e32c4dec4ddfd6ee1ec4dc}{m}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classResultSet_a4eca226d7033e0faa1c29911829a657c}{\index{\-Result\-Set@{\-Result\-Set}!add@{add}}
+\index{add@{add}!ResultSet@{\-Result\-Set}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Result\-Set\-::add} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Entry}}]{e}
+\end{DoxyParamCaption}
+)}}\label{classResultSet_a4eca226d7033e0faa1c29911829a657c}
+
+
+\-Function to add matching entry to unorderer\-\_\-map \hyperlink{classResultSet_ad62d4fd4f4e32c4dec4ddfd6ee1ec4dc}{\-Result\-Set\-::m}. 
+
+\-It will first find whether the entry is already present in the map. \-Note that same entry means img\-Id and patch location are same but sketch may be different. \-The value of map is increased if more entries matches. \-This is done because for $\ast$every descriptor we have calculate \hyperlink{classIndex_af70cace4ee2df00ea9f3abbdd4a03e31}{\-Index\-::total\-\_\-sketch} number of different sketch by applying different hash function. \-If most of the sketch matches the entry stored in map then $\ast$ it means thats the corresponding entry is highly matched descriptor. \-While if only some of them match than its not a good match. \hypertarget{classResultSet_a81983f9f4106c9202239f766994d5de0}{\index{\-Result\-Set@{\-Result\-Set}!sort@{sort}}
+\index{sort@{sort}!ResultSet@{\-Result\-Set}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Result\-Set\-::sort} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classResultSet_a81983f9f4106c9202239f766994d5de0}
+\-Sort the entries stored in \hyperlink{classResultSet_ad62d4fd4f4e32c4dec4ddfd6ee1ec4dc}{\-Result\-Set\-::m} with entries having most no. of matches at top and least no. of matches at bottom and store $\ast$them in \hyperlink{classResultSet_af94fb0e3ab0007c7c0369e6fbb3a2f86}{\-Result\-Set\-::results} 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classResultSet_ad62d4fd4f4e32c4dec4ddfd6ee1ec4dc}{\index{\-Result\-Set@{\-Result\-Set}!m@{m}}
+\index{m@{m}!ResultSet@{\-Result\-Set}}
+\subsubsection[{m}]{\setlength{\rightskip}{0pt plus 5cm}unordered\-\_\-map$<${\bf \-Entry},int,{\bf \-Hasher},{\bf \-Equal\-Fn}$>$ {\bf \-Result\-Set\-::m}}}\label{classResultSet_ad62d4fd4f4e32c4dec4ddfd6ee1ec4dc}
+\-Consist of map with entry as index and total number of matching of different sketch values on applying different hash function on the same patch \hypertarget{classResultSet_af94fb0e3ab0007c7c0369e6fbb3a2f86}{\index{\-Result\-Set@{\-Result\-Set}!results@{results}}
+\index{results@{results}!ResultSet@{\-Result\-Set}}
+\subsubsection[{results}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<${\bf \-Entry}$>$ $>$ {\bf \-Result\-Set\-::results}}}\label{classResultSet_af94fb0e3ab0007c7c0369e6fbb3a2f86}
+
+
+\-Store all the result matching entries from database for the corresponding user drawn patches. 
+
+\-Its 2dimensional with first dimension denoting total number of matches for different hash function out of 20 and second dimension cosist of entries from database having those many matches. \-For e.\-g. result\mbox{[}3\mbox{]}\mbox{[}\mbox{]} will consist of all those entries in database such that on applying 20 different hash function and generating sketches 3 of the sketch match 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{ResultSet_8h}{\-Result\-Set.\-h}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\-Result\-Set.\-cpp\end{DoxyCompactItemize}

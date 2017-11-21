@@ -1,0 +1,82 @@
+\hypertarget{classMatchingImage}{\section{\-Matching\-Image \-Class \-Reference}
+\label{classMatchingImage}\index{\-Matching\-Image@{\-Matching\-Image}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMatchingImage_af047e292090610e8343d5599d2bf23a2}{\hyperlink{classMatchingImage_af047e292090610e8343d5599d2bf23a2}{\-Matching\-Image} ()}\label{classMatchingImage_af047e292090610e8343d5599d2bf23a2}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classMatchingImage_a56099f7ece98c96062e16fe24fdcfe85}{\hyperlink{classMatchingImage_a56099f7ece98c96062e16fe24fdcfe85}{\-Matching\-Image} (int, string)}\label{classMatchingImage_a56099f7ece98c96062e16fe24fdcfe85}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor 2. \end{DoxyCompactList}\item 
+void \hyperlink{classMatchingImage_a9b37df20ee22da8f0fc5b6dce1fc452e}{cast\-Votes} (\-Mat \&)
+\begin{DoxyCompactList}\small\item\em \-Will add votes to different images in the database. \end{DoxyCompactList}\item 
+void \hyperlink{classMatchingImage_aad29ba5d24382051784e5a19edcad69d}{add\-Votes} (\hyperlink{classCell}{\-Cell}, \hyperlink{classEntry}{\-Entry}, int)
+\begin{DoxyCompactList}\small\item\em \-Helper function to cast\-Votes. \end{DoxyCompactList}\item 
+\hypertarget{classMatchingImage_ad32e697a01f3a18103192918f856dfd6}{void \hyperlink{classMatchingImage_ad32e697a01f3a18103192918f856dfd6}{find\-Maxima} ()}\label{classMatchingImage_ad32e697a01f3a18103192918f856dfd6}
+
+\begin{DoxyCompactList}\small\item\em \-Find the images with maximum votes. \end{DoxyCompactList}\item 
+\hypertarget{classMatchingImage_a79f66ca5dc56f8566dde276e1340a961}{void \hyperlink{classMatchingImage_a79f66ca5dc56f8566dde276e1340a961}{fine\-Alignment} (\-Mat, \-Mat, int \&, int \&)}\label{classMatchingImage_a79f66ca5dc56f8566dde276e1340a961}
+
+\begin{DoxyCompactList}\small\item\em \-Further align the matching image to user drawn image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMatchingImage_acffbf75099f1a39f35bb2296301828c8}{unordered\-\_\-map$<$ int, \hyperlink{classImageVotes}{\-Image\-Votes} $>$ \hyperlink{classMatchingImage_acffbf75099f1a39f35bb2296301828c8}{votes}}\label{classMatchingImage_acffbf75099f1a39f35bb2296301828c8}
+
+\begin{DoxyCompactList}\small\item\em \-It will store img\-Id as index and \hyperlink{classImageVotes}{\-Image\-Votes} as value. \end{DoxyCompactList}\item 
+\hypertarget{classMatchingImage_a95e570f95473d1879d0bc67966dd5a6b}{\hyperlink{classDescriptor}{\-Descriptor} \hyperlink{classMatchingImage_a95e570f95473d1879d0bc67966dd5a6b}{descriptor}}\label{classMatchingImage_a95e570f95473d1879d0bc67966dd5a6b}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classDescriptor}{\-Descriptor} object. \end{DoxyCompactList}\item 
+\hypertarget{classMatchingImage_a2b29bfff30c24d43f3ffb674a1ee3911}{\hyperlink{classWeightImage}{\-Weight\-Image} \hyperlink{classMatchingImage_a2b29bfff30c24d43f3ffb674a1ee3911}{\-Weight}}\label{classMatchingImage_a2b29bfff30c24d43f3ffb674a1ee3911}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classWeightImage}{\-Weight\-Image} object. \end{DoxyCompactList}\item 
+\hypertarget{classMatchingImage_a3ea900f8b77ed661c806b2f66ecc7b3b}{int \hyperlink{classMatchingImage_a3ea900f8b77ed661c806b2f66ecc7b3b}{max\-Number}}\label{classMatchingImage_a3ea900f8b77ed661c806b2f66ecc7b3b}
+
+\begin{DoxyCompactList}\small\item\em \-Maximum number of matching images to be found. \end{DoxyCompactList}\item 
+\hypertarget{classMatchingImage_adbe968ad134d521a353558558973130d}{\hyperlink{classIndex}{\-Index} \hyperlink{classMatchingImage_adbe968ad134d521a353558558973130d}{index}}\label{classMatchingImage_adbe968ad134d521a353558558973130d}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classIndex}{\-Index} object. \end{DoxyCompactList}\item 
+\hypertarget{classMatchingImage_adacc530b2a485ded2374c583412232c3}{\-Mat \hyperlink{classMatchingImage_adacc530b2a485ded2374c583412232c3}{img}}\label{classMatchingImage_adacc530b2a485ded2374c583412232c3}
+
+\begin{DoxyCompactList}\small\item\em \-User drawn image. \end{DoxyCompactList}\item 
+\hypertarget{classMatchingImage_a439633963d23178a69fb680b26c6f183}{string \hyperlink{classMatchingImage_a439633963d23178a69fb680b26c6f183}{path}}\label{classMatchingImage_a439633963d23178a69fb680b26c6f183}
+
+\begin{DoxyCompactList}\small\item\em path to database files \end{DoxyCompactList}\item 
+\hypertarget{classMatchingImage_aaf52c9c5343328007df832e716938c9f}{\hyperlink{classGrid}{\-Grid} \hyperlink{classMatchingImage_aaf52c9c5343328007df832e716938c9f}{grid}}\label{classMatchingImage_aaf52c9c5343328007df832e716938c9f}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classGrid}{\-Grid} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classMatchingImage_aad29ba5d24382051784e5a19edcad69d}{\index{\-Matching\-Image@{\-Matching\-Image}!add\-Votes@{add\-Votes}}
+\index{add\-Votes@{add\-Votes}!MatchingImage@{\-Matching\-Image}}
+\subsubsection[{add\-Votes}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Matching\-Image\-::add\-Votes} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cell}}]{c, }
+\item[{{\bf \-Entry}}]{e, }
+\item[{int}]{l}
+\end{DoxyParamCaption}
+)}}\label{classMatchingImage_aad29ba5d24382051784e5a19edcad69d}
+
+
+\-Helper function to cast\-Votes. 
+
+\-It will add votes to the bins of the image to which the drawn patch matches using \hyperlink{classImageVotes_a33a05976df28dc7b8ab46e5d3e3f6dd5}{\-Image\-Votes\-::alter\-Votes} function. \hypertarget{classMatchingImage_a9b37df20ee22da8f0fc5b6dce1fc452e}{\index{\-Matching\-Image@{\-Matching\-Image}!cast\-Votes@{cast\-Votes}}
+\index{cast\-Votes@{cast\-Votes}!MatchingImage@{\-Matching\-Image}}
+\subsubsection[{cast\-Votes}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Matching\-Image\-::cast\-Votes} (
+\begin{DoxyParamCaption}
+\item[{\-Mat \&}]{img\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{classMatchingImage_a9b37df20ee22da8f0fc5b6dce1fc452e}
+
+
+\-Will add votes to different images in the database. 
+
+\-For all the patches of drawn image, it will calculate descriptor, convert it to sketch, calculate 20 such sketch using different \hyperlink{classHash}{\-Hash} function, match them to database image patch's corresponding sketch and add votes to the database image to which the patch belong using \hyperlink{classMatchingImage_aad29ba5d24382051784e5a19edcad69d}{\-Matching\-Image\-::add\-Votes} function 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{MatchingImage_8h}{\-Matching\-Image.\-h}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\-Matching\-Image.\-cpp\end{DoxyCompactItemize}

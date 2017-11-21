@@ -1,0 +1,106 @@
+\hypertarget{classDrawnSkeleton}{\section{\-Drawn\-Skeleton \-Class \-Reference}
+\label{classDrawnSkeleton}\index{\-Drawn\-Skeleton@{\-Drawn\-Skeleton}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDrawnSkeleton_a6c8ea8126a39c2f27eec0463c067f874}{\hyperlink{classDrawnSkeleton_a6c8ea8126a39c2f27eec0463c067f874}{\-Drawn\-Skeleton} ()}\label{classDrawnSkeleton_a6c8ea8126a39c2f27eec0463c067f874}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+int \hyperlink{classDrawnSkeleton_aa5778650debd810ce52d65cac4a46482}{min\-\_\-dist\-\_\-skeleton\-Nodes} (\hyperlink{structPOINT}{\-P\-O\-I\-N\-T})
+\item 
+void \hyperlink{classDrawnSkeleton_a4b0de2a84fda7555e40f2b1cdef5ee83}{update\-\_\-\-Binding\-\_\-\-Matrix} ()
+\item 
+void \hyperlink{classDrawnSkeleton_aa8d84a14ae641abe8e6d59ec0aefb5dd}{update\-\_\-\-Transform\-\_\-\-Matrix} ()
+\item 
+float \hyperlink{classDrawnSkeleton_a121370d515d5cc1d217f5ef2db53513e}{find\-\_\-dist} (\hyperlink{structPOINT}{\-P\-O\-I\-N\-T}, \hyperlink{structPOINT}{\-P\-O\-I\-N\-T})
+\item 
+void \hyperlink{classDrawnSkeleton_ab10e74a5a78dca908e9ee05548ba0036}{calculate\-\_\-new\-P2} ()
+\item 
+void \hyperlink{classDrawnSkeleton_ad38f1661673431a72236c882c01e1011}{update} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDrawnSkeleton_ae971e61b960b25a06e9a086ab30d4164}{int \hyperlink{classDrawnSkeleton_ae971e61b960b25a06e9a086ab30d4164}{node\-\_\-count}}\label{classDrawnSkeleton_ae971e61b960b25a06e9a086ab30d4164}
+
+\begin{DoxyCompactList}\small\item\em \-Store the number of joints of skeleton. \end{DoxyCompactList}\item 
+\hypertarget{classDrawnSkeleton_a06ead449a985f64a8e30e748bd501b06}{bool \hyperlink{classDrawnSkeleton_a06ead449a985f64a8e30e748bd501b06}{update\-\_\-flag}}\label{classDrawnSkeleton_a06ead449a985f64a8e30e748bd501b06}
+
+\begin{DoxyCompactList}\small\item\em \-Store whether \hyperlink{classDrawnSkeleton_ad38f1661673431a72236c882c01e1011}{update()} function is called or not. \end{DoxyCompactList}\item 
+\hypertarget{classDrawnSkeleton_a381328c50a2d345fb5815572ffb04ea9}{float \hyperlink{classDrawnSkeleton_a381328c50a2d345fb5815572ffb04ea9}{base\-\_\-x}}\label{classDrawnSkeleton_a381328c50a2d345fb5815572ffb04ea9}
+
+\begin{DoxyCompactList}\small\item\em \-Store the root joint coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classDrawnSkeleton_a59389e3ca0ed18f268ab2ed9f3c94dbb}{float {\bfseries base\-\_\-y}}\label{classDrawnSkeleton_a59389e3ca0ed18f268ab2ed9f3c94dbb}
+
+\item 
+\hypertarget{classDrawnSkeleton_a1d9c8842f31312c2d83ad327949ef2d7}{vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ \hyperlink{classDrawnSkeleton_a1d9c8842f31312c2d83ad327949ef2d7}{skeleton\-Nodes}}\label{classDrawnSkeleton_a1d9c8842f31312c2d83ad327949ef2d7}
+
+\begin{DoxyCompactList}\small\item\em \-Store the coordinates of skeleton joints. \end{DoxyCompactList}\item 
+\hypertarget{classDrawnSkeleton_aecfe65d1b552f2b7fb2ececada22a743}{vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ \hyperlink{classDrawnSkeleton_aecfe65d1b552f2b7fb2ececada22a743}{diff}}\label{classDrawnSkeleton_aecfe65d1b552f2b7fb2ececada22a743}
+
+\begin{DoxyCompactList}\small\item\em \-Store the diff needed to generate next frame skeleton joints. \end{DoxyCompactList}\item 
+\hypertarget{classDrawnSkeleton_ab0f7ec52b128c90a8593287776bacb6e}{vector$<$ float $>$ \hyperlink{classDrawnSkeleton_ab0f7ec52b128c90a8593287776bacb6e}{bone\-\_\-inverse\-\_\-scale}}\label{classDrawnSkeleton_ab0f7ec52b128c90a8593287776bacb6e}
+
+\begin{DoxyCompactList}\small\item\em \-Store the inverse scale factor of all joints. \end{DoxyCompactList}\item 
+\hypertarget{classDrawnSkeleton_ab438fd7fadc23f3dd48d963544b793af}{vector$<$ \hyperlink{classutil_1_1math_1_1mat33}{util\-::math\-::mat33} $>$ \hyperlink{classDrawnSkeleton_ab438fd7fadc23f3dd48d963544b793af}{\-Binding}}\label{classDrawnSkeleton_ab438fd7fadc23f3dd48d963544b793af}
+
+\begin{DoxyCompactList}\small\item\em \-Store \-Binding matrix for all joints. \end{DoxyCompactList}\item 
+\hypertarget{classDrawnSkeleton_ac220e0fe2ed0957aa7ee4adc9486912d}{vector$<$ \hyperlink{classutil_1_1math_1_1mat33}{util\-::math\-::mat33} $>$ \hyperlink{classDrawnSkeleton_ac220e0fe2ed0957aa7ee4adc9486912d}{\-Transform}}\label{classDrawnSkeleton_ac220e0fe2ed0957aa7ee4adc9486912d}
+
+\begin{DoxyCompactList}\small\item\em \-Store \-Transformation matrix for all joints. \end{DoxyCompactList}\item 
+\hypertarget{classDrawnSkeleton_a8dc97fc7686f67159e8fa6b24bff4e39}{vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ \hyperlink{classDrawnSkeleton_a8dc97fc7686f67159e8fa6b24bff4e39}{old\-Skeleton\-Nodes}}\label{classDrawnSkeleton_a8dc97fc7686f67159e8fa6b24bff4e39}
+
+\begin{DoxyCompactList}\small\item\em \-Store the new coordinates of old skeleton joints before applying scale factor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classDrawnSkeleton_ab10e74a5a78dca908e9ee05548ba0036}{\index{\-Drawn\-Skeleton@{\-Drawn\-Skeleton}!calculate\-\_\-new\-P2@{calculate\-\_\-new\-P2}}
+\index{calculate\-\_\-new\-P2@{calculate\-\_\-new\-P2}!DrawnSkeleton@{\-Drawn\-Skeleton}}
+\subsubsection[{calculate\-\_\-new\-P2}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Drawn\-Skeleton\-::calculate\-\_\-new\-P2} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDrawnSkeleton_ab10e74a5a78dca908e9ee05548ba0036}
+\-Calculate new coordinates of skeleton joints after applying scale factor. \-This method will first store the original skeleton\-Nodes in old\-Skeleton\-Nodes. \-Then it will bring the bone to origin, apply difference after multiplying it with inverse scale factor. \-Scale factor is multiplied as the difference was calculated in database skeleton scale. \-And then the new coordinates are shifted from origin to new parent position. \hypertarget{classDrawnSkeleton_a121370d515d5cc1d217f5ef2db53513e}{\index{\-Drawn\-Skeleton@{\-Drawn\-Skeleton}!find\-\_\-dist@{find\-\_\-dist}}
+\index{find\-\_\-dist@{find\-\_\-dist}!DrawnSkeleton@{\-Drawn\-Skeleton}}
+\subsubsection[{find\-\_\-dist}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-Drawn\-Skeleton\-::find\-\_\-dist} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-P\-O\-I\-N\-T}}]{skeleton\-Nodes, }
+\item[{{\bf \-P\-O\-I\-N\-T}}]{curve\-Point}
+\end{DoxyParamCaption}
+)}}\label{classDrawnSkeleton_a121370d515d5cc1d217f5ef2db53513e}
+\-Return distance between two points \hypertarget{classDrawnSkeleton_aa5778650debd810ce52d65cac4a46482}{\index{\-Drawn\-Skeleton@{\-Drawn\-Skeleton}!min\-\_\-dist\-\_\-skeleton\-Nodes@{min\-\_\-dist\-\_\-skeleton\-Nodes}}
+\index{min\-\_\-dist\-\_\-skeleton\-Nodes@{min\-\_\-dist\-\_\-skeleton\-Nodes}!DrawnSkeleton@{\-Drawn\-Skeleton}}
+\subsubsection[{min\-\_\-dist\-\_\-skeleton\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Drawn\-Skeleton\-::min\-\_\-dist\-\_\-skeleton\-Nodes} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-P\-O\-I\-N\-T}}]{select}
+\end{DoxyParamCaption}
+)}}\label{classDrawnSkeleton_aa5778650debd810ce52d65cac4a46482}
+\-Calculate skeleton joint with minimum distance to the curvepoint \-Curvepoint is passed to this function as argument. \-Its distance is calculated from all the skeleton\-Nodes and the index of the skeleton\-Node with minimum distance is returned \hypertarget{classDrawnSkeleton_ad38f1661673431a72236c882c01e1011}{\index{\-Drawn\-Skeleton@{\-Drawn\-Skeleton}!update@{update}}
+\index{update@{update}!DrawnSkeleton@{\-Drawn\-Skeleton}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Drawn\-Skeleton\-::update} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDrawnSkeleton_ad38f1661673431a72236c882c01e1011}
+\-Will update skeleton\-Nodes coordinate from screen space to skeleton space where root is the origin. \-Also, it will update base\-\_\-x and base\-\_\-y with root coordinates and node\-\_\-count with total skeleton joints. update flag is made 1 \hypertarget{classDrawnSkeleton_a4b0de2a84fda7555e40f2b1cdef5ee83}{\index{\-Drawn\-Skeleton@{\-Drawn\-Skeleton}!update\-\_\-\-Binding\-\_\-\-Matrix@{update\-\_\-\-Binding\-\_\-\-Matrix}}
+\index{update\-\_\-\-Binding\-\_\-\-Matrix@{update\-\_\-\-Binding\-\_\-\-Matrix}!DrawnSkeleton@{\-Drawn\-Skeleton}}
+\subsubsection[{update\-\_\-\-Binding\-\_\-\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Drawn\-Skeleton\-::update\-\_\-\-Binding\-\_\-\-Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDrawnSkeleton_a4b0de2a84fda7555e40f2b1cdef5ee83}
+\-Calculate \-Binding matrix for all skeleton joints \-To bring the curvepoints to the same coordinate space as the bones of the skeleton \-Binding matrix is calculated. \-Coordinate spcae of skeleton is such that y axis lies along the bone and x axis lies perpendicular to the bone. \-This method will first calculate the angle cos\-\_\-t and sin\-\_\-t that the currrent frame bone is making with coordinate axis to create rotation part of the matrix. \-Binding matrix is combination of \-Rotation and \-Translation matrix, where \-Translation matrix shift the origin of curvepoints to the skeleton bone parent joint and \-Rotation matrix will rotate the original coordinate axes such that it matches with joint coordinate axes. \hypertarget{classDrawnSkeleton_aa8d84a14ae641abe8e6d59ec0aefb5dd}{\index{\-Drawn\-Skeleton@{\-Drawn\-Skeleton}!update\-\_\-\-Transform\-\_\-\-Matrix@{update\-\_\-\-Transform\-\_\-\-Matrix}}
+\index{update\-\_\-\-Transform\-\_\-\-Matrix@{update\-\_\-\-Transform\-\_\-\-Matrix}!DrawnSkeleton@{\-Drawn\-Skeleton}}
+\subsubsection[{update\-\_\-\-Transform\-\_\-\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Drawn\-Skeleton\-::update\-\_\-\-Transform\-\_\-\-Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDrawnSkeleton_aa8d84a14ae641abe8e6d59ec0aefb5dd}
+\-Calculate \-Transformation matrix for all skeleton joints \-Transformation matrix is calculated to apply the same transformation the the curvepoints as applied on skeleton joints. \-This method will first calculate the angle cos\-\_\-t and sin\-\_\-t that the next frame bone is making with coordinate axis to create rotation part of the matrix. \-And the translation part of the matrix is the parent joint coordinates. \-When this matrix is multiplied with \-Binding matrix, we get the final \-Transformation matrix whose rotation part will rotate the curve along the new coordinate axes i.\-e. along the new bone and translation part will translate it to new origin for the next frame. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{DrawnSkeleton_8h}{\-Drawn\-Skeleton.\-h}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\-Drawn\-Skeleton.\-cpp\end{DoxyCompactItemize}

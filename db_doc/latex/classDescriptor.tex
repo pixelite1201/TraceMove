@@ -1,0 +1,140 @@
+\hypertarget{classDescriptor}{\section{\-Descriptor \-Class \-Reference}
+\label{classDescriptor}\index{\-Descriptor@{\-Descriptor}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDescriptor_a67969fc893331c2e6d554ddf6d6c55f0}{\hyperlink{classDescriptor_a67969fc893331c2e6d554ddf6d6c55f0}{\-Descriptor} ()}\label{classDescriptor_a67969fc893331c2e6d554ddf6d6c55f0}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classDescriptor}{\-Descriptor} \hyperlink{classDescriptor_aaa645a033c3f4062daaa1c437401d3f1}{off\-Line} ()
+\begin{DoxyCompactList}\small\item\em \-Initialize \hyperlink{classDescriptor}{\-Descriptor} values for offline processing. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_abe98f6d262c7d8761ead439384b15004}{\hyperlink{classDescriptor}{\-Descriptor} {\bfseries \-Query} ()}\label{classDescriptor_abe98f6d262c7d8761ead439384b15004}
+
+\item 
+int \hyperlink{classDescriptor_a6cac06d9e113d7ccd42e9afc59a486e1}{get\-Num\-Bits} ()
+\item 
+void \hyperlink{classDescriptor_a86f2435a651d8543bf2b7c89a0071fe2}{set\-Image} (\-Mat \&)
+\begin{DoxyCompactList}\small\item\em \-Calculate normalized magnitude and orientation at every pixel. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_a0f36772f8cfcc89141ae1fa857e7b802}{void {\bfseries calc} (int, int, vector$<$ bool $>$ \&desc)}\label{classDescriptor_a0f36772f8cfcc89141ae1fa857e7b802}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classDescriptor_a1ae195a424d69f9e1d754fcceee3c0ad}{patch\-Size}
+\begin{DoxyCompactList}\small\item\em \-Patch size. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_a3c1aa9d535ace644e5fa39f58aeac6cd}{double \hyperlink{classDescriptor_a3c1aa9d535ace644e5fa39f58aeac6cd}{blur\-Initial}}\label{classDescriptor_a3c1aa9d535ace644e5fa39f58aeac6cd}
+
+\begin{DoxyCompactList}\small\item\em blur\-Initial define the amout of gaussian blur applied on image initially \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_aaf3c7a659238b79e56ec12ac14a897a3}{double \hyperlink{classDescriptor_aaf3c7a659238b79e56ec12ac14a897a3}{sigma}}\label{classDescriptor_aaf3c7a659238b79e56ec12ac14a897a3}
+
+\begin{DoxyCompactList}\small\item\em \-Standard deviation for \-Gaussian blur of image. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_a69c1674606ab53a1ef438048bf7ad746}{double \hyperlink{classDescriptor_a69c1674606ab53a1ef438048bf7ad746}{epsilon}}\label{classDescriptor_a69c1674606ab53a1ef438048bf7ad746}
+
+\begin{DoxyCompactList}\small\item\em \-To prevent division from zero in normalized magnitude calculation small value is used in denominator. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_a06c7e988065fa55b338ab84448b98c3d}{int \hyperlink{classDescriptor_a06c7e988065fa55b338ab84448b98c3d}{xbuck}}\label{classDescriptor_a06c7e988065fa55b338ab84448b98c3d}
+
+\begin{DoxyCompactList}\small\item\em \-Range of 3\-D histogram. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_a44811fe508cef265a1c15fb81d53ef4e}{int {\bfseries ybuck}}\label{classDescriptor_a44811fe508cef265a1c15fb81d53ef4e}
+
+\item 
+\hypertarget{classDescriptor_afbf37c1c77f5213e7f3bd4864c509262}{int {\bfseries tbuck}}\label{classDescriptor_afbf37c1c77f5213e7f3bd4864c509262}
+
+\item 
+\hypertarget{classDescriptor_a7bf833df5a59f820488a0a4347c04be3}{int \hyperlink{classDescriptor_a7bf833df5a59f820488a0a4347c04be3}{xbuck2}}\label{classDescriptor_a7bf833df5a59f820488a0a4347c04be3}
+
+\begin{DoxyCompactList}\small\item\em \-Range of 3\-D histogram for resampling. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_a7e65d07bbf225deac9506144f839dd22}{int {\bfseries ybuck2}}\label{classDescriptor_a7e65d07bbf225deac9506144f839dd22}
+
+\item 
+\hypertarget{classDescriptor_a21dcb75aa90e7142e171067367f53594}{int {\bfseries tbuck2}}\label{classDescriptor_a21dcb75aa90e7142e171067367f53594}
+
+\item 
+double \hyperlink{classDescriptor_a17990364a2abbf2c531a2b644be57bf4}{threshold}
+\begin{DoxyCompactList}\small\item\em threshold value is used to convert descriptor into binary descriptor \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_a22955c31e2f8dfd48f0d10f1210c2989}{double \hyperlink{classDescriptor_a22955c31e2f8dfd48f0d10f1210c2989}{minimum\-Edge}}\label{classDescriptor_a22955c31e2f8dfd48f0d10f1210c2989}
+
+\begin{DoxyCompactList}\small\item\em \-Used to define whether the patch is considered blank or not. \end{DoxyCompactList}\item 
+double \hyperlink{classDescriptor_a64392290391afd9000a085710513c381}{min\-Pix\-Val}
+\begin{DoxyCompactList}\small\item\em \-Used to define whether the pixel value can be considered as edge or not. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_aaf21c8c1f5f0c65d599f3e38b7c23f89}{double \hyperlink{classDescriptor_aaf21c8c1f5f0c65d599f3e38b7c23f89}{histogram\-Range}}\label{classDescriptor_aaf21c8c1f5f0c65d599f3e38b7c23f89}
+
+\begin{DoxyCompactList}\small\item\em \-Range of histogram. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_a173fd2cc85cc2711aea3a32d587c1251}{double {\bfseries increment}}\label{classDescriptor_a173fd2cc85cc2711aea3a32d587c1251}
+
+\item 
+\hypertarget{classDescriptor_a58836366bc5c421435fcfbde81879eee}{int \hyperlink{classDescriptor_a58836366bc5c421435fcfbde81879eee}{sigma1}}\label{classDescriptor_a58836366bc5c421435fcfbde81879eee}
+
+\begin{DoxyCompactList}\small\item\em \-Standard deviation for \-Gaussian blur of histogram. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_a96aea1288aa39d193855997eefeb80d8}{int {\bfseries sigma2}}\label{classDescriptor_a96aea1288aa39d193855997eefeb80d8}
+
+\item 
+\hypertarget{classDescriptor_ac46c03a8dabd30d59473c16b76751204}{\-Mat \hyperlink{classDescriptor_ac46c03a8dabd30d59473c16b76751204}{orientation}}\label{classDescriptor_ac46c03a8dabd30d59473c16b76751204}
+
+\begin{DoxyCompactList}\small\item\em \-Store the orientation at all pixels of image. \end{DoxyCompactList}\item 
+\hypertarget{classDescriptor_a6ef50df18ee1af2ae4f54b573b5c89c0}{\-Mat \hyperlink{classDescriptor_a6ef50df18ee1af2ae4f54b573b5c89c0}{nor\-Magnitude}}\label{classDescriptor_a6ef50df18ee1af2ae4f54b573b5c89c0}
+
+\begin{DoxyCompactList}\small\item\em \-Store normalized magnitude at all pixels of image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classDescriptor_a6cac06d9e113d7ccd42e9afc59a486e1}{\index{\-Descriptor@{\-Descriptor}!get\-Num\-Bits@{get\-Num\-Bits}}
+\index{get\-Num\-Bits@{get\-Num\-Bits}!Descriptor@{\-Descriptor}}
+\subsubsection[{get\-Num\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Descriptor\-::get\-Num\-Bits} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDescriptor_a6cac06d9e113d7ccd42e9afc59a486e1}
+\-Return \-Number of bits in 3\-D histogram after converting float values to binary on basis of \-Descriptor\-:\-: threshold value \hypertarget{classDescriptor_aaa645a033c3f4062daaa1c437401d3f1}{\index{\-Descriptor@{\-Descriptor}!off\-Line@{off\-Line}}
+\index{off\-Line@{off\-Line}!Descriptor@{\-Descriptor}}
+\subsubsection[{off\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Descriptor} {\bf \-Descriptor\-::off\-Line} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDescriptor_aaa645a033c3f4062daaa1c437401d3f1}
+
+
+\-Initialize \hyperlink{classDescriptor}{\-Descriptor} values for offline processing. 
+
+\-Since some of the descriptor values for online and offline processing are different. \-Hence, offline values are initialized using this function \hypertarget{classDescriptor_a86f2435a651d8543bf2b7c89a0071fe2}{\index{\-Descriptor@{\-Descriptor}!set\-Image@{set\-Image}}
+\index{set\-Image@{set\-Image}!Descriptor@{\-Descriptor}}
+\subsubsection[{set\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Descriptor\-::set\-Image} (
+\begin{DoxyParamCaption}
+\item[{\-Mat \&}]{src\-Image}
+\end{DoxyParamCaption}
+)}}\label{classDescriptor_a86f2435a651d8543bf2b7c89a0071fe2}
+
+
+\-Calculate normalized magnitude and orientation at every pixel. 
+
+\-First the image is blurred so that slight difference in two image patches won't treat them as different. \-Next, gradient and orientation at at every pixel is calculated. \-The gradient is normalized by dividing it with \-Gaussian blurred window 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classDescriptor_a64392290391afd9000a085710513c381}{\index{\-Descriptor@{\-Descriptor}!min\-Pix\-Val@{min\-Pix\-Val}}
+\index{min\-Pix\-Val@{min\-Pix\-Val}!Descriptor@{\-Descriptor}}
+\subsubsection[{min\-Pix\-Val}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Descriptor\-::min\-Pix\-Val}}}\label{classDescriptor_a64392290391afd9000a085710513c381}
+
+
+\-Used to define whether the pixel value can be considered as edge or not. 
+
+\-Initialized to 0.\-02. \-If gradient at any pixel is less than this then its not considered as edge pixel and its value is not added in histogram \hypertarget{classDescriptor_a1ae195a424d69f9e1d754fcceee3c0ad}{\index{\-Descriptor@{\-Descriptor}!patch\-Size@{patch\-Size}}
+\index{patch\-Size@{patch\-Size}!Descriptor@{\-Descriptor}}
+\subsubsection[{patch\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Descriptor\-::patch\-Size}}}\label{classDescriptor_a1ae195a424d69f9e1d754fcceee3c0ad}
+
+
+\-Patch size. 
+
+\-Since the image is divided into small patches patch size define the size of these patches \hypertarget{classDescriptor_a17990364a2abbf2c531a2b644be57bf4}{\index{\-Descriptor@{\-Descriptor}!threshold@{threshold}}
+\index{threshold@{threshold}!Descriptor@{\-Descriptor}}
+\subsubsection[{threshold}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Descriptor\-::threshold}}}\label{classDescriptor_a17990364a2abbf2c531a2b644be57bf4}
+
+
+threshold value is used to convert descriptor into binary descriptor 
+
+\-When the value at any point in histogram is greater than threshold its set to 1 and when its less than threshold its set to 0 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/db/\hyperlink{Descriptor_8h}{\-Descriptor.\-h}\item 
+/home/priyanka/\-Dataset25/src/db/\-Descriptor.\-cpp\end{DoxyCompactItemize}

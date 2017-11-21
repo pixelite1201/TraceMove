@@ -1,0 +1,70 @@
+\hypertarget{classTable}{\section{\-Table \-Class \-Reference}
+\label{classTable}\index{\-Table@{\-Table}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classTable_a049f2e06391781ae255c6698869c4ad1}{\hyperlink{classTable_a049f2e06391781ae255c6698869c4ad1}{\-Table} ()}\label{classTable_a049f2e06391781ae255c6698869c4ad1}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor1. \end{DoxyCompactList}\item 
+\hypertarget{classTable_afa7224dc42a93bcf6928183aabf47085}{\hyperlink{classTable_afa7224dc42a93bcf6928183aabf47085}{\-Table} (\hyperlink{classHash}{\-Hash})}\label{classTable_afa7224dc42a93bcf6928183aabf47085}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor2. \end{DoxyCompactList}\item 
+\hypertarget{classTable_a1394e64084209ac7c89028aa4a268efa}{void \hyperlink{classTable_a1394e64084209ac7c89028aa4a268efa}{reverse\-Index} ()}\label{classTable_a1394e64084209ac7c89028aa4a268efa}
+
+\begin{DoxyCompactList}\small\item\em \-Sort the entries on the basis of sketch, then build \hyperlink{classTable_a1b577c35b4a5e34d49b64041f1ca9643}{\-Table\-::hashmap} using \hyperlink{classTable_ad96aac7308901debb1cd6bcb083c1864}{\-Table\-::build\-Map()} \end{DoxyCompactList}\item 
+void \hyperlink{classTable_ad96aac7308901debb1cd6bcb083c1864}{build\-Map} ()
+\begin{DoxyCompactList}\small\item\em \-Generate \hyperlink{classTable_a1b577c35b4a5e34d49b64041f1ca9643}{\-Table\-::hashmap}. \end{DoxyCompactList}\item 
+\hypertarget{classTable_a313d283fdadd46e30933e300562fe1f8}{void \hyperlink{classTable_a313d283fdadd46e30933e300562fe1f8}{fill\-Entry} (vector$<$ bool $>$ \&, int, int, int)}\label{classTable_a313d283fdadd46e30933e300562fe1f8}
+
+\begin{DoxyCompactList}\small\item\em \-Will fill the \hyperlink{classTable_aff08f646763f9b621ab9cf5678e40227}{\-Table\-::entries} with the entry calculated for all the patches of different images using \hyperlink{classTable_a0d776f9c99a00daa15a1cda6fd186592}{\-Table\-::hash} defined here. \end{DoxyCompactList}\item 
+void \hyperlink{classTable_a84f84ff9071a6636e2150431eb4c19b1}{find} (vector$<$ bool $>$ \&, \hyperlink{classResultSet}{\-Result\-Set} $\ast$, int)
+\begin{DoxyCompactList}\small\item\em \-It will find all the descriptor in database matching the descriptor of user drawn image. \end{DoxyCompactList}\item 
+\hypertarget{classTable_a2698f5ada6c37ef2245e4a5e8161ae5e}{void \hyperlink{classTable_a2698f5ada6c37ef2245e4a5e8161ae5e}{show} ()}\label{classTable_a2698f5ada6c37ef2245e4a5e8161ae5e}
+
+\begin{DoxyCompactList}\small\item\em \-It will show all the entries stored in \hyperlink{classTable_aff08f646763f9b621ab9cf5678e40227}{\-Table\-::entries}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classTable_aff08f646763f9b621ab9cf5678e40227}{vector$<$ \hyperlink{classEntry}{\-Entry} $>$ \hyperlink{classTable_aff08f646763f9b621ab9cf5678e40227}{entries}}\label{classTable_aff08f646763f9b621ab9cf5678e40227}
+
+\begin{DoxyCompactList}\small\item\em \-All the entries (\hyperlink{classEntry}{\-Entry}) generated for different patches of all the images in database using single hash function is stored here. \end{DoxyCompactList}\item 
+\hypertarget{classTable_a0d776f9c99a00daa15a1cda6fd186592}{\hyperlink{classHash}{\-Hash} \hyperlink{classTable_a0d776f9c99a00daa15a1cda6fd186592}{hash}}\label{classTable_a0d776f9c99a00daa15a1cda6fd186592}
+
+\begin{DoxyCompactList}\small\item\em \-Store hash functions needed to generate the final sketch from binary descriptor. \end{DoxyCompactList}\item 
+\hypertarget{classTable_a1b577c35b4a5e34d49b64041f1ca9643}{unordered\-\_\-map$<$ int, int $>$ \hyperlink{classTable_a1b577c35b4a5e34d49b64041f1ca9643}{hashmap}}\label{classTable_a1b577c35b4a5e34d49b64041f1ca9643}
+
+\begin{DoxyCompactList}\small\item\em \-Hashmap is generated for direct access of img\-Id and location of patch using sketch as index value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classTable_ad96aac7308901debb1cd6bcb083c1864}{\index{\-Table@{\-Table}!build\-Map@{build\-Map}}
+\index{build\-Map@{build\-Map}!Table@{\-Table}}
+\subsubsection[{build\-Map}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Table\-::build\-Map} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTable_ad96aac7308901debb1cd6bcb083c1864}
+
+
+\-Generate \hyperlink{classTable_a1b577c35b4a5e34d49b64041f1ca9643}{\-Table\-::hashmap}. 
+
+\-Note that there can be many patches with same sketch value \-S, hence hashmap will just point to the first entry in the database having sketch \-S. \-Since the entries are sorted on the basis of sketch they can be access by travelling linearly \hypertarget{classTable_a84f84ff9071a6636e2150431eb4c19b1}{\index{\-Table@{\-Table}!find@{find}}
+\index{find@{find}!Table@{\-Table}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Table\-::find} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ bool $>$ \&}]{descriptor, }
+\item[{{\bf \-Result\-Set} $\ast$}]{found, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{classTable_a84f84ff9071a6636e2150431eb4c19b1}
+
+
+\-It will find all the descriptor in database matching the descriptor of user drawn image. 
+
+\-It will take binary descriptor as input, calculate sketch for it by applying \hyperlink{classTable_a0d776f9c99a00daa15a1cda6fd186592}{\-Table\-::hash} function on it. \-It will then search all the entries i.\-e. img\-Id and patch location having same sketch from \hyperlink{classTable_a1b577c35b4a5e34d49b64041f1ca9643}{\-Table\-::hashmap}. \-It will add these entries in \hyperlink{classResultSet_af94fb0e3ab0007c7c0369e6fbb3a2f86}{\-Result\-Set\-::results} 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/db/\hyperlink{Table_8h}{\-Table.\-h}\item 
+/home/priyanka/\-Dataset25/src/db/\-Table.\-cpp\end{DoxyCompactItemize}

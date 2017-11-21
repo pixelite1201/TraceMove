@@ -1,0 +1,178 @@
+\hypertarget{classutil_1_1math_1_1vec3}{\section{util\-:\-:math\-:\-:vec3 \-Class \-Reference}
+\label{classutil_1_1math_1_1vec3}\index{util\-::math\-::vec3@{util\-::math\-::vec3}}
+}
+
+
+\-This is a general 3\-D vector class.  
+
+
+
+
+{\ttfamily \#include $<$matvec.\-hpp$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_aa76ecb2e2e4169d0719e70d928cbb9f5}{\hyperlink{classutil_1_1math_1_1vec3_aa76ecb2e2e4169d0719e70d928cbb9f5}{vec3} (const \hyperlink{classutil_1_1math_1_1vec4}{vec4} \&v)}\label{classutil_1_1math_1_1vec3_aa76ecb2e2e4169d0719e70d928cbb9f5}
+
+\begin{DoxyCompactList}\small\item\em \-Downcasting from a 4\-D vector to 3\-D. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_ac1432a40730a7919dddecbb5042e4cee}{\hyperlink{classutil_1_1math_1_1vec3_ac1432a40730a7919dddecbb5042e4cee}{vec3} (const \hyperlink{classutil_1_1math_1_1vec4}{vec4} \&v, int drop\-Axis)}\label{classutil_1_1math_1_1vec3_ac1432a40730a7919dddecbb5042e4cee}
+
+\begin{DoxyCompactList}\small\item\em \-Downcasting from a 4\-D vector to 3\-D, dropping the `drop\-Axis' component. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_af8045fb15a617d99b9ac76c6af04f6c8}{\hyperlink{classutil_1_1math_1_1vec3_af8045fb15a617d99b9ac76c6af04f6c8}{$\sim$vec3} ()}\label{classutil_1_1math_1_1vec3_af8045fb15a617d99b9ac76c6af04f6c8}
+
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_aaf6301c10fd53827c56a481703202d1e}{double \& \hyperlink{classutil_1_1math_1_1vec3_aaf6301c10fd53827c56a481703202d1e}{operator\mbox{[}$\,$\mbox{]}} (int index)}\label{classutil_1_1math_1_1vec3_aaf6301c10fd53827c56a481703202d1e}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded indexing operator. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a902087b3ff44eb916fd13941354c66ed}{double \hyperlink{classutil_1_1math_1_1vec3_a902087b3ff44eb916fd13941354c66ed}{operator\mbox{[}$\,$\mbox{]}} (int index) const }\label{classutil_1_1math_1_1vec3_a902087b3ff44eb916fd13941354c66ed}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded indexing operator. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a15ddc56b3ad8fb6fcd0063da0558f7c9}{double \hyperlink{classutil_1_1math_1_1vec3_a15ddc56b3ad8fb6fcd0063da0558f7c9}{length} (void) const }\label{classutil_1_1math_1_1vec3_a15ddc56b3ad8fb6fcd0063da0558f7c9}
+
+\begin{DoxyCompactList}\small\item\em \-Returns length of the vector. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_ab1c1a11be9fdb31c4e85091d9283fc9c}{double \hyperlink{classutil_1_1math_1_1vec3_ab1c1a11be9fdb31c4e85091d9283fc9c}{length2} (void) const }\label{classutil_1_1math_1_1vec3_ab1c1a11be9fdb31c4e85091d9283fc9c}
+
+\begin{DoxyCompactList}\small\item\em \-Returns squared length of the vector. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a659cf322957535bf345b673ecc6c672d}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \& \hyperlink{classutil_1_1math_1_1vec3_a659cf322957535bf345b673ecc6c672d}{normalize} (void)}\label{classutil_1_1math_1_1vec3_a659cf322957535bf345b673ecc6c672d}
+
+\begin{DoxyCompactList}\small\item\em \-Normalizes the vector. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a302ce4196f7b18279b47c063d3db3887}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \& \hyperlink{classutil_1_1math_1_1vec3_a302ce4196f7b18279b47c063d3db3887}{homogenize} (void)}\label{classutil_1_1math_1_1vec3_a302ce4196f7b18279b47c063d3db3887}
+
+\begin{DoxyCompactList}\small\item\em \-Homogenizes the vector. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a00f991fca6808eeebb252ce167f78a8c}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \& \hyperlink{classutil_1_1math_1_1vec3_a00f991fca6808eeebb252ce167f78a8c}{map} (double($\ast$fn)(double))}\label{classutil_1_1math_1_1vec3_a00f991fca6808eeebb252ce167f78a8c}
+
+\begin{DoxyCompactList}\small\item\em \-Maps the function to every component of the vector. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_ac564460ee54987dc39cf577285701816}{void \hyperlink{classutil_1_1math_1_1vec3_ac564460ee54987dc39cf577285701816}{set} (double x, double y, double z)}\label{classutil_1_1math_1_1vec3_ac564460ee54987dc39cf577285701816}
+
+\begin{DoxyCompactList}\small\item\em \-Sets the value of the vector. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_afd20d73037ce507437fe2f08ba0a3d07}{void \hyperlink{classutil_1_1math_1_1vec3_afd20d73037ce507437fe2f08ba0a3d07}{print} (\-F\-I\-L\-E $\ast$file, std\-::string name)}\label{classutil_1_1math_1_1vec3_afd20d73037ce507437fe2f08ba0a3d07}
+
+\begin{DoxyCompactList}\small\item\em \-Print the vector to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_a947428533e7d4d35e51871e7d2b8b51a}{\hyperlink{classutil_1_1math_1_1vec3_a947428533e7d4d35e51871e7d2b8b51a}{vec3} ()}\label{classutil_1_1math_1_1vec3_a947428533e7d4d35e51871e7d2b8b51a}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a58447a9fc69cc0ff2fba1aecf6b7c05f}{{\bfseries vec3} (const double x, const double y, const double z)}\label{classutil_1_1math_1_1vec3_a58447a9fc69cc0ff2fba1aecf6b7c05f}
+
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_aa7589bf7977bbdb34cd017cbd54f618a}{{\bfseries vec3} (const double d)}\label{classutil_1_1math_1_1vec3_aa7589bf7977bbdb34cd017cbd54f618a}
+
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_a47460f0b21a74011595c992320c2fc0b}{{\bfseries vec3} (const double v\mbox{[}3\mbox{]})}\label{classutil_1_1math_1_1vec3_a47460f0b21a74011595c992320c2fc0b}
+
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_a9a63e151f3627c80c68fc3c254c78a34}{{\bfseries vec3} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v)}\label{classutil_1_1math_1_1vec3_a9a63e151f3627c80c68fc3c254c78a34}
+
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_a8a3836e36c8012d2fdde753644574508}{\hyperlink{classutil_1_1math_1_1vec3_a8a3836e36c8012d2fdde753644574508}{vec3} (const \hyperlink{classutil_1_1math_1_1vec2}{vec2} \&v)}\label{classutil_1_1math_1_1vec3_a8a3836e36c8012d2fdde753644574508}
+
+\begin{DoxyCompactList}\small\item\em \-Casting from a 2\-D vector to 3\-D. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a4a4505f01fe537b644f7e1f8679e5703}{{\bfseries vec3} (const \hyperlink{classutil_1_1math_1_1vec2}{vec2} \&v, double d)}\label{classutil_1_1math_1_1vec3_a4a4505f01fe537b644f7e1f8679e5703}
+
+\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_a69dc97259ead3f6adfe400a8c9c97732}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \& \hyperlink{classutil_1_1math_1_1vec3_a69dc97259ead3f6adfe400a8c9c97732}{operator=} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v)}\label{classutil_1_1math_1_1vec3_a69dc97259ead3f6adfe400a8c9c97732}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded assignment operators. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a9c7fe8a4857beaafd85a2e76af2060ec}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \& {\bfseries operator+=} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v)}\label{classutil_1_1math_1_1vec3_a9c7fe8a4857beaafd85a2e76af2060ec}
+
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_a83fd9cfb13f0239924cdf37c9b96d24d}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \& {\bfseries operator-\/=} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v)}\label{classutil_1_1math_1_1vec3_a83fd9cfb13f0239924cdf37c9b96d24d}
+
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_a3c337ae630a313886e73efa2fc9c08af}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \& {\bfseries operator$\ast$=} (const double d)}\label{classutil_1_1math_1_1vec3_a3c337ae630a313886e73efa2fc9c08af}
+
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_ac1b098cf4ece36550e7cdcf8f307f861}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \& {\bfseries operator/=} (const double d)}\label{classutil_1_1math_1_1vec3_ac1b098cf4ece36550e7cdcf8f307f861}
+
+\end{DoxyCompactItemize}
+
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_a0267f605be5b03354d63e0d41070affa}{double {\bfseries data} \mbox{[}3\mbox{]}}\label{classutil_1_1math_1_1vec3_a0267f605be5b03354d63e0d41070affa}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_ad57f6a85dd0416a336c6d6bbbfdf5441}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_ad57f6a85dd0416a336c6d6bbbfdf5441}{operator-\/} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v)}\label{classutil_1_1math_1_1vec3_ad57f6a85dd0416a336c6d6bbbfdf5441}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded unary negation. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_acf5352581471d83c7a24e8def644c5f0}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_acf5352581471d83c7a24e8def644c5f0}{operator+} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1vec3_acf5352581471d83c7a24e8def644c5f0}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded addition. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a53bb1e0d21f6bd657bec6a332928e658}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_a53bb1e0d21f6bd657bec6a332928e658}{operator-\/} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1vec3_a53bb1e0d21f6bd657bec6a332928e658}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded subtraction. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a468e40be151ef1a0e4dd735ee43f9205}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_a468e40be151ef1a0e4dd735ee43f9205}{operator$\ast$} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const double d)}\label{classutil_1_1math_1_1vec3_a468e40be151ef1a0e4dd735ee43f9205}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded multiplication (vector \& constant) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a2c8337666efbe99a544bbba1b4d04e17}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_a2c8337666efbe99a544bbba1b4d04e17}{operator$\ast$} (const double d, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1)}\label{classutil_1_1math_1_1vec3_a2c8337666efbe99a544bbba1b4d04e17}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded multiplication (constant \& vector) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_ac78a1894e9f2ea662209f72812e2a399}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_ac78a1894e9f2ea662209f72812e2a399}{operator$\ast$} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v, \hyperlink{classutil_1_1math_1_1mat33}{mat33} \&\-M)}\label{classutil_1_1math_1_1vec3_ac78a1894e9f2ea662209f72812e2a399}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded multiplication (vector \& matrix) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_aa0f2b7eb53427e197a5cec77e5c0203a}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_aa0f2b7eb53427e197a5cec77e5c0203a}{operator$\ast$} (\hyperlink{classutil_1_1math_1_1mat33}{mat33} \&\-M, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v)}\label{classutil_1_1math_1_1vec3_aa0f2b7eb53427e197a5cec77e5c0203a}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded multiplication (matrix \& vector) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_ad7df494dc8e5ac121f8145be825001a0}{double \hyperlink{classutil_1_1math_1_1vec3_ad7df494dc8e5ac121f8145be825001a0}{operator$\ast$} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1vec3_ad7df494dc8e5ac121f8145be825001a0}
+
+\begin{DoxyCompactList}\small\item\em \-Overloaded multiplication (dot product) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a7b75b3cc31e22293a2f5af9f62135385}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_a7b75b3cc31e22293a2f5af9f62135385}{operator/} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v, const double d)}\label{classutil_1_1math_1_1vec3_a7b75b3cc31e22293a2f5af9f62135385}
+
+\begin{DoxyCompactList}\small\item\em \-Oveloaded division (vector \& constant) \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a6001bb521909594cbcae8e353c55f88c}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_a6001bb521909594cbcae8e353c55f88c}{operator$^\wedge$} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1vec3_a6001bb521909594cbcae8e353c55f88c}
+
+\begin{DoxyCompactList}\small\item\em \-Vector cross product. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_abd89cd8c1b3be5b9bb6030edf37583ae}{bool \hyperlink{classutil_1_1math_1_1vec3_abd89cd8c1b3be5b9bb6030edf37583ae}{operator==} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1vec3_abd89cd8c1b3be5b9bb6030edf37583ae}
+
+\begin{DoxyCompactList}\small\item\em \-Vector equality. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_af752df656fbee41b9b206db179a22304}{bool \hyperlink{classutil_1_1math_1_1vec3_af752df656fbee41b9b206db179a22304}{operator!=} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1vec3_af752df656fbee41b9b206db179a22304}
+
+\begin{DoxyCompactList}\small\item\em \-Vector inequality. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_af118931380f0404944f2b2744bf013bb}{void \hyperlink{classutil_1_1math_1_1vec3_af118931380f0404944f2b2744bf013bb}{swap} (\hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1vec3_af118931380f0404944f2b2744bf013bb}
+
+\begin{DoxyCompactList}\small\item\em \-Swap vectors v1 and v2. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_ac201895777a4097ad456186c11fc6ce1}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_ac201895777a4097ad456186c11fc6ce1}{min} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1vec3_ac201895777a4097ad456186c11fc6ce1}
+
+\begin{DoxyCompactList}\small\item\em \-Minimum of vectors v1 \& v2. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_a1d25d5466c8b11bb866c29f181e3fdc3}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_a1d25d5466c8b11bb866c29f181e3fdc3}{max} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1vec3_a1d25d5466c8b11bb866c29f181e3fdc3}
+
+\begin{DoxyCompactList}\small\item\em \-Maximum of vectors v1 \& v2. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_acfc1eb25b65a34651c5c91ed44532ef2}{\hyperlink{classutil_1_1math_1_1vec3}{vec3} \hyperlink{classutil_1_1math_1_1vec3_acfc1eb25b65a34651c5c91ed44532ef2}{prod} (const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v1, const \hyperlink{classutil_1_1math_1_1vec3}{vec3} \&v2)}\label{classutil_1_1math_1_1vec3_acfc1eb25b65a34651c5c91ed44532ef2}
+
+\begin{DoxyCompactList}\small\item\em \-Term by term product. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_a15a2529e420e1a5cb94508d6a5a57d1e}{class \hyperlink{classutil_1_1math_1_1vec3_a15a2529e420e1a5cb94508d6a5a57d1e}{vec2}}\label{classutil_1_1math_1_1vec3_a15a2529e420e1a5cb94508d6a5a57d1e}
+
+\begin{DoxyCompactList}\small\item\em \-Friend classes. \end{DoxyCompactList}\item 
+\hypertarget{classutil_1_1math_1_1vec3_aa6e6ead6159bde48f1607d4208122d9d}{class {\bfseries vec4}}\label{classutil_1_1math_1_1vec3_aa6e6ead6159bde48f1607d4208122d9d}
+
+\item 
+\hypertarget{classutil_1_1math_1_1vec3_a8e304e17586e44a87b8c0622e8d66e10}{class {\bfseries mat33}}\label{classutil_1_1math_1_1vec3_a8e304e17586e44a87b8c0622e8d66e10}
+
+\end{DoxyCompactItemize}
+
+
+
+\subsection{\-Detailed \-Description}
+\-This is a general 3\-D vector class. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{matvec_8hpp}{matvec.\-hpp}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/matvec.\-cpp\end{DoxyCompactItemize}

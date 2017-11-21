@@ -1,0 +1,72 @@
+\hypertarget{classRetrievedSkeleton}{\section{\-Retrieved\-Skeleton \-Class \-Reference}
+\label{classRetrievedSkeleton}\index{\-Retrieved\-Skeleton@{\-Retrieved\-Skeleton}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRetrievedSkeleton_a09515a4be7994c3dc097b26b9f50276a}{\hyperlink{classRetrievedSkeleton_a09515a4be7994c3dc097b26b9f50276a}{\-Retrieved\-Skeleton} ()}\label{classRetrievedSkeleton_a09515a4be7994c3dc097b26b9f50276a}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classRetrievedSkeleton_ab0b91142796e5bce5653b47a7449d54d}{void \hyperlink{classRetrievedSkeleton_ab0b91142796e5bce5653b47a7449d54d}{read} ()}\label{classRetrievedSkeleton_ab0b91142796e5bce5653b47a7449d54d}
+
+\begin{DoxyCompactList}\small\item\em \-Read the data values from the file. \end{DoxyCompactList}\item 
+void \hyperlink{classRetrievedSkeleton_aff6b1eec8bb28e9571c6d81f3b4ee6a5}{compare} (\hyperlink{classDrawnSkeleton}{\-Drawn\-Skeleton} $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Find the frame\-No with most matching skeleton to user drawn skeleton. \end{DoxyCompactList}\item 
+void \hyperlink{classRetrievedSkeleton_ab958835824565862540ba0cc701358da}{find\-\_\-diff} (\hyperlink{classDrawnSkeleton}{\-Drawn\-Skeleton} $\ast$, int)
+\begin{DoxyCompactList}\small\item\em \-Find difference between two consecutive frame's joints. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ $>$ \hyperlink{classRetrievedSkeleton_ad60fef3aad1bc9f9425c6bea6633c268}{position}
+\begin{DoxyCompactList}\small\item\em \-Will store the datavalues read from converted bvh file. \end{DoxyCompactList}\item 
+\hypertarget{classRetrievedSkeleton_aad667e65274158e4b5586136b52f137f}{int \hyperlink{classRetrievedSkeleton_aad667e65274158e4b5586136b52f137f}{frame\-No}}\label{classRetrievedSkeleton_aad667e65274158e4b5586136b52f137f}
+
+\begin{DoxyCompactList}\small\item\em \-Contain the frame\-No from database matching the user drawn skeleton and will keep on incrementing as new frames are generated. \end{DoxyCompactList}\item 
+\hypertarget{classRetrievedSkeleton_a03732ee286c4c0fe55faa62e5cca2490}{int \hyperlink{classRetrievedSkeleton_a03732ee286c4c0fe55faa62e5cca2490}{node\-\_\-count}}\label{classRetrievedSkeleton_a03732ee286c4c0fe55faa62e5cca2490}
+
+\begin{DoxyCompactList}\small\item\em \-Contain total join count of skeleton. \end{DoxyCompactList}\item 
+\hypertarget{classRetrievedSkeleton_abdca9dec6d142fc784a6c7712fe54bf9}{int \hyperlink{classRetrievedSkeleton_abdca9dec6d142fc784a6c7712fe54bf9}{total\-\_\-skeleton}}\label{classRetrievedSkeleton_abdca9dec6d142fc784a6c7712fe54bf9}
+
+\begin{DoxyCompactList}\small\item\em \-Contain total frames in db. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classRetrievedSkeleton_aff6b1eec8bb28e9571c6d81f3b4ee6a5}{\index{\-Retrieved\-Skeleton@{\-Retrieved\-Skeleton}!compare@{compare}}
+\index{compare@{compare}!RetrievedSkeleton@{\-Retrieved\-Skeleton}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Retrieved\-Skeleton\-::compare} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Drawn\-Skeleton} $\ast$}]{d\-S}
+\end{DoxyParamCaption}
+)}}\label{classRetrievedSkeleton_aff6b1eec8bb28e9571c6d81f3b4ee6a5}
+
+
+\-Find the frame\-No with most matching skeleton to user drawn skeleton. 
+
+\-Will find the sum of distance of all the coordinates of user drawn skeleton to db skeleton for all the frames. \-One with minimum distance is the most matching skeleton. \hypertarget{classRetrievedSkeleton_ab958835824565862540ba0cc701358da}{\index{\-Retrieved\-Skeleton@{\-Retrieved\-Skeleton}!find\-\_\-diff@{find\-\_\-diff}}
+\index{find\-\_\-diff@{find\-\_\-diff}!RetrievedSkeleton@{\-Retrieved\-Skeleton}}
+\subsubsection[{find\-\_\-diff}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Retrieved\-Skeleton\-::find\-\_\-diff} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Drawn\-Skeleton} $\ast$}]{d\-S, }
+\item[{int}]{\-F}
+\end{DoxyParamCaption}
+)}}\label{classRetrievedSkeleton_ab958835824565862540ba0cc701358da}
+
+
+\-Find difference between two consecutive frame's joints. 
+
+\-Will take drawn skeleton coordinates as input and a boolean value denoting whether the difference should be calculated with previous frame or with next frame. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classRetrievedSkeleton_ad60fef3aad1bc9f9425c6bea6633c268}{\index{\-Retrieved\-Skeleton@{\-Retrieved\-Skeleton}!position@{position}}
+\index{position@{position}!RetrievedSkeleton@{\-Retrieved\-Skeleton}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<${\bf \-P\-O\-I\-N\-T}$>$ $>$ {\bf \-Retrieved\-Skeleton\-::position}}}\label{classRetrievedSkeleton_ad60fef3aad1bc9f9425c6bea6633c268}
+
+
+\-Will store the datavalues read from converted bvh file. 
+
+2\-D vector with index 1 denoting the frame and index 2 denoting the skeleton joints coordinates 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{RetrievedSkeleton_8h}{\-Retrieved\-Skeleton.\-h}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\-Retrieved\-Skeleton.\-cpp\end{DoxyCompactItemize}

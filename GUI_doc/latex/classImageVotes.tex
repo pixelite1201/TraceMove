@@ -1,0 +1,66 @@
+\hypertarget{classImageVotes}{\section{\-Image\-Votes \-Class \-Reference}
+\label{classImageVotes}\index{\-Image\-Votes@{\-Image\-Votes}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classImageVotes_ad4607ac8f62f3fcf496b4a121a00ee4a}{\hyperlink{classImageVotes_ad4607ac8f62f3fcf496b4a121a00ee4a}{\-Image\-Votes} (int \hyperlink{classImageVotes_ae5270d0d4b6f9ae069b3cb926bd29c0e}{img\-Id}, \hyperlink{classGrid}{\-Grid} \hyperlink{classImageVotes_a244e45706478d62a53b13db049b47b52}{grid})}\label{classImageVotes_ad4607ac8f62f3fcf496b4a121a00ee4a}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+int \hyperlink{classImageVotes_a33a05976df28dc7b8ab46e5d3e3f6dd5}{alter\-Votes} (int dx, int dy, int l)
+\begin{DoxyCompactList}\small\item\em \-Will alter votes in offsets on the basis of value provided by new descriptor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classImageVotes_ab091b6fc057a340e0dec1ec8ecdc2068}{int \hyperlink{classImageVotes_ab091b6fc057a340e0dec1ec8ecdc2068}{offset\-Size}}\label{classImageVotes_ab091b6fc057a340e0dec1ec8ecdc2068}
+
+\begin{DoxyCompactList}\small\item\em \-Max location offset difference allowed between drawn patch and database patch. \end{DoxyCompactList}\item 
+\hypertarget{classImageVotes_ae5270d0d4b6f9ae069b3cb926bd29c0e}{int \hyperlink{classImageVotes_ae5270d0d4b6f9ae069b3cb926bd29c0e}{img\-Id}}\label{classImageVotes_ae5270d0d4b6f9ae069b3cb926bd29c0e}
+
+\begin{DoxyCompactList}\small\item\em img\-Id for which votes are stored \end{DoxyCompactList}\item 
+\hypertarget{classImageVotes_a244e45706478d62a53b13db049b47b52}{\hyperlink{classGrid}{\-Grid} \hyperlink{classImageVotes_a244e45706478d62a53b13db049b47b52}{grid}}\label{classImageVotes_a244e45706478d62a53b13db049b47b52}
+
+\begin{DoxyCompactList}\small\item\em \-Store the patch location for drawn image. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \hyperlink{classImageVotes_a6db69485a42c5fae731e4800b08a5b26}{offsets}
+\begin{DoxyCompactList}\small\item\em \-This is used to find the maximum displacement of the matching image. \end{DoxyCompactList}\item 
+\hypertarget{classImageVotes_a63af62d90937f1f65c6c6bf6ea071c5f}{int \hyperlink{classImageVotes_a63af62d90937f1f65c6c6bf6ea071c5f}{max\-Votes}}\label{classImageVotes_a63af62d90937f1f65c6c6bf6ea071c5f}
+
+\begin{DoxyCompactList}\small\item\em max\-Votes for the image \end{DoxyCompactList}\item 
+\hypertarget{classImageVotes_abf09b33968b11ab551f472ad16eab411}{int \hyperlink{classImageVotes_abf09b33968b11ab551f472ad16eab411}{maxbin\-X}}\label{classImageVotes_abf09b33968b11ab551f472ad16eab411}
+
+\begin{DoxyCompactList}\small\item\em bin in \-X direction with maximum votes \end{DoxyCompactList}\item 
+\hypertarget{classImageVotes_aa7286de7d363910a712f1ff6312709c0}{int \hyperlink{classImageVotes_aa7286de7d363910a712f1ff6312709c0}{maxbin\-Y}}\label{classImageVotes_aa7286de7d363910a712f1ff6312709c0}
+
+\begin{DoxyCompactList}\small\item\em bin in \-Y direction with maximum votes \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classImageVotes_a33a05976df28dc7b8ab46e5d3e3f6dd5}{\index{\-Image\-Votes@{\-Image\-Votes}!alter\-Votes@{alter\-Votes}}
+\index{alter\-Votes@{alter\-Votes}!ImageVotes@{\-Image\-Votes}}
+\subsubsection[{alter\-Votes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Image\-Votes\-::alter\-Votes} (
+\begin{DoxyParamCaption}
+\item[{int}]{dx, }
+\item[{int}]{dy, }
+\item[{int}]{l}
+\end{DoxyParamCaption}
+)}}\label{classImageVotes_a33a05976df28dc7b8ab46e5d3e3f6dd5}
+
+
+\-Will alter votes in offsets on the basis of value provided by new descriptor. 
+
+dx and dy are the displacement of the matching patch to user drawn patch in x and y direction. \-This will be used to increment the votes in corresponding bin. and l is the maximum number of sketches of drawn image patch that matches to database image patch. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classImageVotes_a6db69485a42c5fae731e4800b08a5b26}{\index{\-Image\-Votes@{\-Image\-Votes}!offsets@{offsets}}
+\index{offsets@{offsets}!ImageVotes@{\-Image\-Votes}}
+\subsubsection[{offsets}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$ {\bf \-Image\-Votes\-::offsets}}}\label{classImageVotes_a6db69485a42c5fae731e4800b08a5b26}
+
+
+\-This is used to find the maximum displacement of the matching image. 
+
+\-Since user drawn image may be slightly shifted from the database image, we need to find this displacement and align the matching image to drawn image. \-For this, instead of storing votes for the image, we will divide the votes in different bins where each bin correspond to displacement of the matching patch and the drawn image patch. \-The offset value of the bin with maximum votes is the final displacement of the matching image. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{ImageVotes_8h}{\-Image\-Votes.\-h}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\-Image\-Votes.\-cpp\end{DoxyCompactItemize}

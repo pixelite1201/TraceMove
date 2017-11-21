@@ -1,0 +1,80 @@
+\hypertarget{classHash}{\section{\-Hash \-Class \-Reference}
+\label{classHash}\index{\-Hash@{\-Hash}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHash_a0d9900832f48b313f39a85866ca97e30}{\-Hash} (int x=0, int y=0, int z=0)
+\begin{DoxyCompactList}\small\item\em \-Constructor1. \end{DoxyCompactList}\item 
+\hyperlink{classHash_ac26af76f12633c324c56b82493bce9ef}{\-Hash} (vector$<$ vector$<$ int $>$ $>$ \&)
+\begin{DoxyCompactList}\small\item\em \-Constructor2. \end{DoxyCompactList}\item 
+\hypertarget{classHash_ab426e18bbe0c541990e504b1267336fe}{void \hyperlink{classHash_ab426e18bbe0c541990e504b1267336fe}{show\-Hash} ()}\label{classHash_ab426e18bbe0c541990e504b1267336fe}
+
+\begin{DoxyCompactList}\small\item\em \-Display hash values. \end{DoxyCompactList}\item 
+int \hyperlink{classHash_af1d709ab09752d4324224a4590e2d5f3}{calc\-Sketch} (vector$<$ bool $>$ \&descriptor)
+\begin{DoxyCompactList}\small\item\em \-Calculate \-Sketch for a given descriptor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ int $>$ $>$ \hyperlink{classHash_a312855c01b7618ea56601216467354ee}{indices}
+\begin{DoxyCompactList}\small\item\em \-Store \-Random integer values. \end{DoxyCompactList}\item 
+\hypertarget{classHash_a9cf27a69da7d25a853b9b223fc189de8}{int \hyperlink{classHash_a9cf27a69da7d25a853b9b223fc189de8}{bph}}\label{classHash_a9cf27a69da7d25a853b9b223fc189de8}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classIndex_a32015f3d373d5ad89ec2422e6d170f26}{\-Index\-::bits\-Per\-Hash} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classHash_a0d9900832f48b313f39a85866ca97e30}{\index{\-Hash@{\-Hash}!\-Hash@{\-Hash}}
+\index{\-Hash@{\-Hash}!Hash@{\-Hash}}
+\subsubsection[{\-Hash}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Hash\-::\-Hash} (
+\begin{DoxyParamCaption}
+\item[{int}]{x = {\ttfamily 0}, }
+\item[{int}]{y = {\ttfamily 0}, }
+\item[{int}]{z = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classHash_a0d9900832f48b313f39a85866ca97e30}
+
+
+\-Constructor1. 
+
+\-Used when generated from code \hypertarget{classHash_ac26af76f12633c324c56b82493bce9ef}{\index{\-Hash@{\-Hash}!\-Hash@{\-Hash}}
+\index{\-Hash@{\-Hash}!Hash@{\-Hash}}
+\subsubsection[{\-Hash}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Hash\-::\-Hash} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ int $>$ $>$ \&}]{indices}
+\end{DoxyParamCaption}
+)}}\label{classHash_ac26af76f12633c324c56b82493bce9ef}
+
+
+\-Constructor2. 
+
+\-Used when already stored hash values are read from file 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classHash_af1d709ab09752d4324224a4590e2d5f3}{\index{\-Hash@{\-Hash}!calc\-Sketch@{calc\-Sketch}}
+\index{calc\-Sketch@{calc\-Sketch}!Hash@{\-Hash}}
+\subsubsection[{calc\-Sketch}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Hash\-::calc\-Sketch} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ bool $>$ \&}]{descriptor}
+\end{DoxyParamCaption}
+)}}\label{classHash_af1d709ab09752d4324224a4590e2d5f3}
+
+
+\-Calculate \-Sketch for a given descriptor. 
+
+\-Will apply hash function to descriptor provided as input i.\-e. permute the binary descriptor using indices\mbox{[}i\mbox{]} and search for the lowest index containing 1. \-This is done for all hash functions stored in /ref \hyperlink{classHash_a312855c01b7618ea56601216467354ee}{\-Hash\-::indices} and concatenated together to generate final sketch. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classHash_a312855c01b7618ea56601216467354ee}{\index{\-Hash@{\-Hash}!indices@{indices}}
+\index{indices@{indices}!Hash@{\-Hash}}
+\subsubsection[{indices}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$ {\bf \-Hash\-::indices}}}\label{classHash_a312855c01b7618ea56601216467354ee}
+
+
+\-Store \-Random integer values. 
+
+\-It will store random integer values within the range of 0 to max descriptor size to permute the index of binary descriptor. \-Second index consist of hash function. \-First index denotes total number of hash function needed to generate sketch. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{Hash_8h}{\-Hash.\-h}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\-Hash.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,227 @@
+\hypertarget{classScribbleArea}{\section{\-Scribble\-Area \-Class \-Reference}
+\label{classScribbleArea}\index{\-Scribble\-Area@{\-Scribble\-Area}}
+}
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classScribbleArea_a816e9d0163d4b2c921af229bb966197f}{void \hyperlink{classScribbleArea_a816e9d0163d4b2c921af229bb966197f}{clear\-Image} ()}\label{classScribbleArea_a816e9d0163d4b2c921af229bb966197f}
+
+\begin{DoxyCompactList}\small\item\em \-Will clear the entire display area. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classScribbleArea_a3560f2a44b46531591a1f4b1e42ea86f}{\hyperlink{classScribbleArea_a3560f2a44b46531591a1f4b1e42ea86f}{\-Scribble\-Area} (\-Q\-Widget $\ast$parent=0)}\label{classScribbleArea_a3560f2a44b46531591a1f4b1e42ea86f}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a7ad908197d1fba9479da2b88d898ed42}{void \hyperlink{classScribbleArea_a7ad908197d1fba9479da2b88d898ed42}{set\-Pen\-Color} (const \-Q\-Color \&new\-Color)}\label{classScribbleArea_a7ad908197d1fba9479da2b88d898ed42}
+
+\begin{DoxyCompactList}\small\item\em \-Set pen color to color provided as argument. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a3d9093f87987c3123744605a7a2cf15e}{void \hyperlink{classScribbleArea_a3d9093f87987c3123744605a7a2cf15e}{set\-Pen\-Width} (int new\-Width)}\label{classScribbleArea_a3d9093f87987c3123744605a7a2cf15e}
+
+\begin{DoxyCompactList}\small\item\em \-Set pen color to color provided as argument. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a99eae1d7be108e4cde817f0ec395c8ed}{void \hyperlink{classScribbleArea_a99eae1d7be108e4cde817f0ec395c8ed}{set\-Visibility} (double new\-Visibility)}\label{classScribbleArea_a99eae1d7be108e4cde817f0ec395c8ed}
+
+\begin{DoxyCompactList}\small\item\em \-Set visibility of shadow in background on scale of 0 to 1. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a39eccfe97fab1b788cc873d5de7fce46}{bool \hyperlink{classScribbleArea_a39eccfe97fab1b788cc873d5de7fce46}{is\-Modified} () const }\label{classScribbleArea_a39eccfe97fab1b788cc873d5de7fce46}
+
+\begin{DoxyCompactList}\small\item\em \-Check whether the drawing area is modified. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a1de2530671bd6d575a1499892e877990}{\-Q\-Color \hyperlink{classScribbleArea_a1de2530671bd6d575a1499892e877990}{pen\-Color} () const }\label{classScribbleArea_a1de2530671bd6d575a1499892e877990}
+
+\begin{DoxyCompactList}\small\item\em \-Return current pen color. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a2d1b263e57b70bf645934a1ac2f4e29f}{int \hyperlink{classScribbleArea_a2d1b263e57b70bf645934a1ac2f4e29f}{pen\-Width} () const }\label{classScribbleArea_a2d1b263e57b70bf645934a1ac2f4e29f}
+
+\begin{DoxyCompactList}\small\item\em \-Return current pen width. \end{DoxyCompactList}\item 
+void \hyperlink{classScribbleArea_a24cc1cb9509dd99c9182891ead81e4fb}{update\-Shadow} ()
+\begin{DoxyCompactList}\small\item\em \-Update shadow displayed in the background on the basis of current user image. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_aa9ea1ee5280630537ce47743dc2c8ee6}{void \hyperlink{classScribbleArea_aa9ea1ee5280630537ce47743dc2c8ee6}{save\-\_\-update\-Shadow} ()}\label{classScribbleArea_aa9ea1ee5280630537ce47743dc2c8ee6}
+
+\begin{DoxyCompactList}\small\item\em \-Image displayed on interface is converted to 300$\ast$300 as database images are of size 300$\ast$300. \end{DoxyCompactList}\item 
+void \hyperlink{classScribbleArea_a11f61bfb9fa699b72fde3763ae53c03e}{read\-\_\-display} (\-Q\-Color, \-Q\-Color)
+\begin{DoxyCompactList}\small\item\em \-Display skeleton. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a910fcc131f83dfd4f69015745d244a14}{void \hyperlink{classScribbleArea_a910fcc131f83dfd4f69015745d244a14}{draw\-Curve} (vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$)}\label{classScribbleArea_a910fcc131f83dfd4f69015745d244a14}
+
+\begin{DoxyCompactList}\small\item\em \-Take points drawn by user as input and fit bezier curve on it. \end{DoxyCompactList}\item 
+void \hyperlink{classScribbleArea_a78d0c2e760aa2969a7ae398c7988da3c}{redraw\-Skeleton} ()
+\begin{DoxyCompactList}\small\item\em \-Redraw skeleton. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a1316894d6e0dbc0381f9a76a8c9db99a}{void \hyperlink{classScribbleArea_a1316894d6e0dbc0381f9a76a8c9db99a}{draw\-Curve\-Default\-Color} ()}\label{classScribbleArea_a1316894d6e0dbc0381f9a76a8c9db99a}
+
+\begin{DoxyCompactList}\small\item\em \-Draw the curve with default pen color. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_ac50cd5d2636b2feeb53eecd71fa36e66}{void \hyperlink{classScribbleArea_ac50cd5d2636b2feeb53eecd71fa36e66}{draw\-Curve\-Diff\-Color} ()}\label{classScribbleArea_ac50cd5d2636b2feeb53eecd71fa36e66}
+
+\begin{DoxyCompactList}\small\item\em \-Draw the curve in different color on the basis of their attachment to skeleton joints. \end{DoxyCompactList}\item 
+void \hyperlink{classScribbleArea_a2ac8f20092fbf7d2948dbf84204882cc}{modify\-\_\-rig} ()
+\begin{DoxyCompactList}\small\item\em \-Will update the rig as user's input. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_ad8f7b63e8589290ec3dd163ec9033519}{void \hyperlink{classScribbleArea_ad8f7b63e8589290ec3dd163ec9033519}{erase\-Sketch} ()}\label{classScribbleArea_ad8f7b63e8589290ec3dd163ec9033519}
+
+\begin{DoxyCompactList}\small\item\em \-Will erase the sketch on the interface. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_ab3f4452e27b6a1259d6a85400e9a3fcf}{void \hyperlink{classScribbleArea_ab3f4452e27b6a1259d6a85400e9a3fcf}{after\-\_\-erase} (int)}\label{classScribbleArea_ab3f4452e27b6a1259d6a85400e9a3fcf}
+
+\begin{DoxyCompactList}\small\item\em \-Will update the display on the screen by erasing the curve user has clicked on. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a7e0998c697a5b7bfa75e4824f08742e9}{void \hyperlink{classScribbleArea_a7e0998c697a5b7bfa75e4824f08742e9}{after\-\_\-erase2} (\hyperlink{structPOINT}{\-P\-O\-I\-N\-T})}\label{classScribbleArea_a7e0998c697a5b7bfa75e4824f08742e9}
+
+\begin{DoxyCompactList}\small\item\em \-Will update the display on the screen by erasing the curve user has clicked on. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_aeb142252b19c4a70dda699b4ceadf682}{void \hyperlink{classScribbleArea_aeb142252b19c4a70dda699b4ceadf682}{calculate\-\_\-new\-P} (vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$, vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ \&)}\label{classScribbleArea_aeb142252b19c4a70dda699b4ceadf682}
+
+\begin{DoxyCompactList}\small\item\em \-Will calculate new skeleton joints after scaling the original drawn by scale factor. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_ac1478bfca3dde7dffe85cca86cd7bc95}{void \hyperlink{classScribbleArea_ac1478bfca3dde7dffe85cca86cd7bc95}{scale\-\_\-f} (\hyperlink{classDrawnSkeleton}{\-Drawn\-Skeleton} $\ast$, \hyperlink{classRetrievedSkeleton}{\-Retrieved\-Skeleton} $\ast$)}\label{classScribbleArea_ac1478bfca3dde7dffe85cca86cd7bc95}
+
+\begin{DoxyCompactList}\small\item\em \-Will calculate scale factor of user drawn skeleton bones and database skeleton bones. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a0dfb29b85be254318a5f3bf27bd548d2}{void \hyperlink{classScribbleArea_a0dfb29b85be254318a5f3bf27bd548d2}{draw\-Next\-Frame\-Curve} ()}\label{classScribbleArea_a0dfb29b85be254318a5f3bf27bd548d2}
+
+\begin{DoxyCompactList}\small\item\em \-Apply \-Transformation matrix to current frame curve to generate next frame curves. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classScribbleArea_a03e231e370dcc36fe0c48c577c52796f}{\-Mat \hyperlink{classScribbleArea_a03e231e370dcc36fe0c48c577c52796f}{test\-Img}}\label{classScribbleArea_a03e231e370dcc36fe0c48c577c52796f}
+
+\begin{DoxyCompactList}\small\item\em \-Store the image displayed on the interface. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a21b17b49e377c8218494370f89efbbe4}{\hyperlink{classRetrievedSkeleton}{\-Retrieved\-Skeleton} \hyperlink{classScribbleArea_a21b17b49e377c8218494370f89efbbe4}{r\-S}}\label{classScribbleArea_a21b17b49e377c8218494370f89efbbe4}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classRetrievedSkeleton}{\-Retrieved\-Skeleton} object. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_aea18d75006dec038f4a7927d902815fd}{\hyperlink{classDrawnSkeleton}{\-Drawn\-Skeleton} \hyperlink{classScribbleArea_aea18d75006dec038f4a7927d902815fd}{d\-S}}\label{classScribbleArea_aea18d75006dec038f4a7927d902815fd}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classDrawnSkeleton}{\-Drawn\-Skeleton} object. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_aa5b6a8f216d13730c575035afca482bf}{\hyperlink{classCurvePoints}{\-Curve\-Points} \hyperlink{classScribbleArea_aa5b6a8f216d13730c575035afca482bf}{c\-V}}\label{classScribbleArea_aa5b6a8f216d13730c575035afca482bf}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCurvePoints}{\-Curve\-Points} object. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_ab99e740812a227bd35b68d3ef97ee3f5}{string \hyperlink{classScribbleArea_ab99e740812a227bd35b68d3ef97ee3f5}{path\-\_\-to\-\_\-\-D\-B}}\label{classScribbleArea_ab99e740812a227bd35b68d3ef97ee3f5}
+
+\begin{DoxyCompactList}\small\item\em \-Store path to database files. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a9eae20e4a540ea2a4d64f9e737c5a7d9}{\hyperlink{classMatchingImage}{\-Matching\-Image} \hyperlink{classScribbleArea_a9eae20e4a540ea2a4d64f9e737c5a7d9}{match\-I}}\label{classScribbleArea_a9eae20e4a540ea2a4d64f9e737c5a7d9}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classMatchingImage}{\-Matching\-Image} object. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_ad27705e83dd114906b2ddc5833833643}{bool \hyperlink{classScribbleArea_ad27705e83dd114906b2ddc5833833643}{skeleton}}\label{classScribbleArea_ad27705e83dd114906b2ddc5833833643}
+
+\begin{DoxyCompactList}\small\item\em skeleton drawing mode flag \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_aa9a93e6317c0e2d5ba2d90171bd2ff18}{bool \hyperlink{classScribbleArea_aa9a93e6317c0e2d5ba2d90171bd2ff18}{rig}}\label{classScribbleArea_aa9a93e6317c0e2d5ba2d90171bd2ff18}
+
+\begin{DoxyCompactList}\small\item\em manual rigging mode flag \end{DoxyCompactList}\item 
+bool \hyperlink{classScribbleArea_a2f124e61e968f858c11bf804d4ceef25}{erase}
+\begin{DoxyCompactList}\small\item\em erase1 mode flag \end{DoxyCompactList}\item 
+bool \hyperlink{classScribbleArea_a57e991c5f7cb1ab06e6964f9af7af8f5}{erase2}
+\begin{DoxyCompactList}\small\item\em erase2 mode flag \end{DoxyCompactList}\item 
+bool \hyperlink{classScribbleArea_ab11228bd9b1bea22530184eef7b4e17b}{normal2}
+\begin{DoxyCompactList}\small\item\em normal mode2 flag \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_ab6a3ca0528bc53f8e77a47b03730421a}{bool \hyperlink{classScribbleArea_ab6a3ca0528bc53f8e77a47b03730421a}{shadow\-\_\-flag}}\label{classScribbleArea_ab6a3ca0528bc53f8e77a47b03730421a}
+
+\begin{DoxyCompactList}\small\item\em shadow\-\_\-flag is used to display or hide shadow in background \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a14fd48a52e200dbfdea54729a4e632fd}{bool \hyperlink{classScribbleArea_a14fd48a52e200dbfdea54729a4e632fd}{skeleton\-\_\-flag}}\label{classScribbleArea_a14fd48a52e200dbfdea54729a4e632fd}
+
+\begin{DoxyCompactList}\small\item\em skeleton\-\_\-flag is used to display or hide skeleton \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a7883b3c09d0883cb46fc2e68ebbe9812}{bool \hyperlink{classScribbleArea_a7883b3c09d0883cb46fc2e68ebbe9812}{sketch\-\_\-flag}}\label{classScribbleArea_a7883b3c09d0883cb46fc2e68ebbe9812}
+
+\begin{DoxyCompactList}\small\item\em sketch\-\_\-flag is used to display or hide sketch \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_af8628e06305594a41aeeab1c9ed3cf5b}{bool \hyperlink{classScribbleArea_af8628e06305594a41aeeab1c9ed3cf5b}{first\-\_\-frame\-\_\-done}}\label{classScribbleArea_af8628e06305594a41aeeab1c9ed3cf5b}
+
+\begin{DoxyCompactList}\small\item\em \-Denotes whether first frame is completed or not. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_acd422278072e45a1be766206c689ed71}{int \hyperlink{classScribbleArea_acd422278072e45a1be766206c689ed71}{curve}}\label{classScribbleArea_acd422278072e45a1be766206c689ed71}
+
+\begin{DoxyCompactList}\small\item\em \-Store the number of curve drawn till now. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a1e9227bf72b1fc83cc96d63e7e6b425d}{double \hyperlink{classScribbleArea_a1e9227bf72b1fc83cc96d63e7e6b425d}{shadow\-Visibility}}\label{classScribbleArea_a1e9227bf72b1fc83cc96d63e7e6b425d}
+
+\begin{DoxyCompactList}\small\item\em \-Store shadow visibility value on the scale of 0 to 1. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a37355b5eb73236f1754d02a9bf715407}{vector$<$ float $>$ \hyperlink{classScribbleArea_a37355b5eb73236f1754d02a9bf715407}{bone\-\_\-scale}}\label{classScribbleArea_a37355b5eb73236f1754d02a9bf715407}
+
+\begin{DoxyCompactList}\small\item\em \-Store the scale factor for user drawn skeleton and database skeleton. \end{DoxyCompactList}\item 
+\hypertarget{classScribbleArea_a1af77e24cb9e3bb7cca6484be6995abe}{vector$<$ \hyperlink{structPOINT}{\-P\-O\-I\-N\-T} $>$ \hyperlink{classScribbleArea_a1af77e24cb9e3bb7cca6484be6995abe}{reassociate}}\label{classScribbleArea_a1af77e24cb9e3bb7cca6484be6995abe}
+
+\begin{DoxyCompactList}\small\item\em \-Will store the two points clicked during manual rigging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classScribbleArea_a3ed554609fd0eb635760ab75abe81479}{void {\bfseries key\-Press\-Event} (\-Q\-Key\-Event $\ast$event)}\label{classScribbleArea_a3ed554609fd0eb635760ab75abe81479}
+
+\item 
+\hypertarget{classScribbleArea_a7646e72c61ec6a1eeda468fb6dfa66f1}{void {\bfseries mouse\-Press\-Event} (\-Q\-Mouse\-Event $\ast$event)}\label{classScribbleArea_a7646e72c61ec6a1eeda468fb6dfa66f1}
+
+\item 
+\hypertarget{classScribbleArea_ae98981b6c07de07afdc39d57810e945b}{void {\bfseries mouse\-Move\-Event} (\-Q\-Mouse\-Event $\ast$event)}\label{classScribbleArea_ae98981b6c07de07afdc39d57810e945b}
+
+\item 
+\hypertarget{classScribbleArea_a991eb6ab4ac21895973bc9d81b84a30e}{void {\bfseries mouse\-Release\-Event} (\-Q\-Mouse\-Event $\ast$event)}\label{classScribbleArea_a991eb6ab4ac21895973bc9d81b84a30e}
+
+\item 
+\hypertarget{classScribbleArea_a126a30e3659f6c1cdc202f10fce7e5d9}{void {\bfseries paint\-Event} (\-Q\-Paint\-Event $\ast$event)}\label{classScribbleArea_a126a30e3659f6c1cdc202f10fce7e5d9}
+
+\item 
+\hypertarget{classScribbleArea_aaf6be24625a5f0fe1e4a3b8eecb07575}{void {\bfseries resize\-Event} (\-Q\-Resize\-Event $\ast$event)}\label{classScribbleArea_aaf6be24625a5f0fe1e4a3b8eecb07575}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classScribbleArea_a2ac8f20092fbf7d2948dbf84204882cc}{\index{\-Scribble\-Area@{\-Scribble\-Area}!modify\-\_\-rig@{modify\-\_\-rig}}
+\index{modify\-\_\-rig@{modify\-\_\-rig}!ScribbleArea@{\-Scribble\-Area}}
+\subsubsection[{modify\-\_\-rig}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Scribble\-Area\-::modify\-\_\-rig} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classScribbleArea_a2ac8f20092fbf7d2948dbf84204882cc}
+
+
+\-Will update the rig as user's input. 
+
+\-User will click on the curve and the skeleton joint to which he want to associte the curve. \-It will be passed to \hyperlink{classCurvePoints_a12adb753c1a2d96adcda443d3e0c5655}{\-Curve\-Points\-::manual\-Rigging(vector$<$\-P\-O\-I\-N\-T$>$ curve\-Point,int skeleton)} function which will associate the curvepoints to the user clicked skeleton joint. \-It will again divide curve into different curves on the basis of threshold value using \hyperlink{classCurvePoints_a827534fd2a3895837a2220c148b5269d}{\-Curve\-Points\-::divide\-Curve()}. \-Finally, it will erase the curve from the original joints its associated to. \hypertarget{classScribbleArea_a11f61bfb9fa699b72fde3763ae53c03e}{\index{\-Scribble\-Area@{\-Scribble\-Area}!read\-\_\-display@{read\-\_\-display}}
+\index{read\-\_\-display@{read\-\_\-display}!ScribbleArea@{\-Scribble\-Area}}
+\subsubsection[{read\-\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Scribble\-Area\-::read\-\_\-display} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Color}]{color1, }
+\item[{\-Q\-Color}]{color2}
+\end{DoxyParamCaption}
+)}}\label{classScribbleArea_a11f61bfb9fa699b72fde3763ae53c03e}
+
+
+\-Display skeleton. 
+
+\-If both color arguments are white then it will erase the skeleton, else it will draw the skeleton using the color passed as argument \hypertarget{classScribbleArea_a78d0c2e760aa2969a7ae398c7988da3c}{\index{\-Scribble\-Area@{\-Scribble\-Area}!redraw\-Skeleton@{redraw\-Skeleton}}
+\index{redraw\-Skeleton@{redraw\-Skeleton}!ScribbleArea@{\-Scribble\-Area}}
+\subsubsection[{redraw\-Skeleton}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Scribble\-Area\-::redraw\-Skeleton} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classScribbleArea_a78d0c2e760aa2969a7ae398c7988da3c}
+
+
+\-Redraw skeleton. 
+
+\-If user has made some mistake while drawing the skeleton, he can redraw it. \-The function will remove the skeleton points drawn till now from d\-S-\/$>$skeleton\-Nodes vector \hypertarget{classScribbleArea_a24cc1cb9509dd99c9182891ead81e4fb}{\index{\-Scribble\-Area@{\-Scribble\-Area}!update\-Shadow@{update\-Shadow}}
+\index{update\-Shadow@{update\-Shadow}!ScribbleArea@{\-Scribble\-Area}}
+\subsubsection[{update\-Shadow}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Scribble\-Area\-::update\-Shadow} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classScribbleArea_a24cc1cb9509dd99c9182891ead81e4fb}
+
+
+\-Update shadow displayed in the background on the basis of current user image. 
+
+\-Will take the user drawn image as input, fint most matching image from database, blend them together and display them on interface. \-Since the database images are of 300$\ast$300, final blend image need to be scaled to 600$\ast$600 before displaying. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classScribbleArea_a2f124e61e968f858c11bf804d4ceef25}{\index{\-Scribble\-Area@{\-Scribble\-Area}!erase@{erase}}
+\index{erase@{erase}!ScribbleArea@{\-Scribble\-Area}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Scribble\-Area\-::erase}}}\label{classScribbleArea_a2f124e61e968f858c11bf804d4ceef25}
+
+
+erase1 mode flag 
+
+\-Mode1 refers to the erase done by user before completing the first frame. \-Since no rigging is done at this point, no rigged curves are present only user drawn curves are present and stored in \hyperlink{classCurvePoints_aa9adedc1a7b074e9092ffa8e088aaa1f}{\-Curve\-Points\-::curve\-Points} \hypertarget{classScribbleArea_a57e991c5f7cb1ab06e6964f9af7af8f5}{\index{\-Scribble\-Area@{\-Scribble\-Area}!erase2@{erase2}}
+\index{erase2@{erase2}!ScribbleArea@{\-Scribble\-Area}}
+\subsubsection[{erase2}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Scribble\-Area\-::erase2}}}\label{classScribbleArea_a57e991c5f7cb1ab06e6964f9af7af8f5}
+
+
+erase2 mode flag 
+
+\-Node2 refers to the erase done by user after completing the first frame. \-After rigging is done curves are present in \hyperlink{classCurvePoints_accc80a4b1d563df4709210c4196c3f8d}{\-Curve\-Points\-::final\-\_\-rig\-Points} and are deleted from there. \hypertarget{classScribbleArea_ab11228bd9b1bea22530184eef7b4e17b}{\index{\-Scribble\-Area@{\-Scribble\-Area}!normal2@{normal2}}
+\index{normal2@{normal2}!ScribbleArea@{\-Scribble\-Area}}
+\subsubsection[{normal2}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Scribble\-Area\-::normal2}}}\label{classScribbleArea_ab11228bd9b1bea22530184eef7b4e17b}
+
+
+normal mode2 flag 
+
+\-Normal2 mdoe is active after first frame is completed. \-When the normal2 mode is active, user drawn curves get automatically rigged. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/\hyperlink{scribblearea_8h}{scribblearea.\-h}\item 
+/home/priyanka/\-Dataset25/src/\-G\-U\-I/scribblearea.\-cpp\end{DoxyCompactItemize}

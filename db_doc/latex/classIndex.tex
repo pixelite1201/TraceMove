@@ -1,0 +1,87 @@
+\hypertarget{classIndex}{\section{\-Index \-Class \-Reference}
+\label{classIndex}\index{\-Index@{\-Index}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classIndex_a25ad808f35997941d138c5b1e7cde441}{\hyperlink{classIndex_a25ad808f35997941d138c5b1e7cde441}{\-Index} (int=0, int=0, int=0)}\label{classIndex_a25ad808f35997941d138c5b1e7cde441}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classIndex_ad4569374473db6e4180e7f5e5cbe1cf6}{generate\-Hashes} ()
+\item 
+\hypertarget{classIndex_a98ce1753ab600b67d85dae0b01020b0d}{void \hyperlink{classIndex_a98ce1753ab600b67d85dae0b01020b0d}{reverse\-Index} ()}\label{classIndex_a98ce1753ab600b67d85dae0b01020b0d}
+
+\begin{DoxyCompactList}\small\item\em \-Call \-:\-: \hyperlink{classIndex_a98ce1753ab600b67d85dae0b01020b0d}{reverse\-Index()} function to generate all the sketches for a descriptor. \end{DoxyCompactList}\item 
+\hypertarget{classIndex_a3132e2144d7549df4697db885be653e3}{void \hyperlink{classIndex_a3132e2144d7549df4697db885be653e3}{fill\-Entry} (vector$<$ bool $>$ \&, int, int, int)}\label{classIndex_a3132e2144d7549df4697db885be653e3}
+
+\begin{DoxyCompactList}\small\item\em \-Call \-:\-: \hyperlink{classIndex_a3132e2144d7549df4697db885be653e3}{fill\-Entry()} function to generate all the sketches for a descriptor. \end{DoxyCompactList}\item 
+\hyperlink{classResultSet}{\-Result\-Set} $\ast$ \hyperlink{classIndex_a7d5c9e47037fc4685fc71acab1544b43}{find\-All\-Entries} (vector$<$ bool $>$ \&)
+\item 
+\hypertarget{classIndex_aa9c882998bed9437303b41b377ccc330}{\hyperlink{classResultSet}{\-Result\-Set} $\ast$ {\bfseries find\-Entries} (vector$<$ bool $>$ \&, int)}\label{classIndex_aa9c882998bed9437303b41b377ccc330}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classIndex_af70cace4ee2df00ea9f3abbdd4a03e31}{int \hyperlink{classIndex_af70cace4ee2df00ea9f3abbdd4a03e31}{total\-\_\-sketch}}\label{classIndex_af70cace4ee2df00ea9f3abbdd4a03e31}
+
+\begin{DoxyCompactList}\small\item\em \-Total no. of sketch per patch. \end{DoxyCompactList}\item 
+\hypertarget{classIndex_a7e25594ed3a2d5af48a3370c36ac6481}{int \hyperlink{classIndex_a7e25594ed3a2d5af48a3370c36ac6481}{total\-\_\-hashf}}\label{classIndex_a7e25594ed3a2d5af48a3370c36ac6481}
+
+\begin{DoxyCompactList}\small\item\em \-Total min hash functions used to generate sketch. \end{DoxyCompactList}\item 
+int \hyperlink{classIndex_a32015f3d373d5ad89ec2422e6d170f26}{bits\-Per\-Hash}
+\begin{DoxyCompactList}\small\item\em \-Number of bits required to denote the maximum index in binary descriptor. \end{DoxyCompactList}\item 
+int \hyperlink{classIndex_ac11c8f73f786ae87d455b214d6978fd1}{\-Descriptorbits}
+\begin{DoxyCompactList}\small\item\em \-Number of bits per hash value. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{classIndex_a10d91af933c37e605b1d9bd1a3995f8c}{image\-Names}
+\begin{DoxyCompactList}\small\item\em \-Its consist of image names of all the images in database. \end{DoxyCompactList}\item 
+\hypertarget{classIndex_a3ad2c35848d27fa5a49b78bece15902f}{vector$<$ \hyperlink{classTable}{\-Table} $>$ \hyperlink{classIndex_a3ad2c35848d27fa5a49b78bece15902f}{tables}}\label{classIndex_a3ad2c35848d27fa5a49b78bece15902f}
+
+\begin{DoxyCompactList}\small\item\em \-Data struture to hold all the hash function generated using \-Index\-:\-: generate\-Hashesh() function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classIndex_a7d5c9e47037fc4685fc71acab1544b43}{\index{\-Index@{\-Index}!find\-All\-Entries@{find\-All\-Entries}}
+\index{find\-All\-Entries@{find\-All\-Entries}!Index@{\-Index}}
+\subsubsection[{find\-All\-Entries}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Result\-Set} $\ast$ {\bf \-Index\-::find\-All\-Entries} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ bool $>$ \&}]{descriptor}
+\end{DoxyParamCaption}
+)}}\label{classIndex_a7d5c9e47037fc4685fc71acab1544b43}
+\-Take descriptor and will generate all the entries that will be produced for given descriptor by applying different hash function stored in different \-Table\-::table \hypertarget{classIndex_ad4569374473db6e4180e7f5e5cbe1cf6}{\index{\-Index@{\-Index}!generate\-Hashes@{generate\-Hashes}}
+\index{generate\-Hashes@{generate\-Hashes}!Index@{\-Index}}
+\subsubsection[{generate\-Hashes}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Index\-::generate\-Hashes} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classIndex_ad4569374473db6e4180e7f5e5cbe1cf6}
+\-Generate \hyperlink{classIndex_af70cace4ee2df00ea9f3abbdd4a03e31}{\-Index\-::total\-\_\-sketch} number of different \hyperlink{classIndex_a7e25594ed3a2d5af48a3370c36ac6481}{\-Index\-::total\-\_\-hashf} set of min hash function. \-These hash functions are stored in \hyperlink{classTable}{\-Table} 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classIndex_a32015f3d373d5ad89ec2422e6d170f26}{\index{\-Index@{\-Index}!bits\-Per\-Hash@{bits\-Per\-Hash}}
+\index{bits\-Per\-Hash@{bits\-Per\-Hash}!Index@{\-Index}}
+\subsubsection[{bits\-Per\-Hash}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Index\-::bits\-Per\-Hash}}}\label{classIndex_a32015f3d373d5ad89ec2422e6d170f26}
+
+
+\-Number of bits required to denote the maximum index in binary descriptor. 
+
+\hyperlink{classIndex_a7e25594ed3a2d5af48a3370c36ac6481}{\-Index\-::total\-\_\-hashf} are used to calculate the min hash value which is the smallest index containing 1 after permuting the binary descriptor. \-These min hash values bits are concatenated together to find the final sketch. \-To concatenate them bits its required to get the maximum number of bits required to denote the hash value. \-And max hash value can be the last index of the descriptor, hence its log\-\_\-2 of size of descriptor \hypertarget{classIndex_ac11c8f73f786ae87d455b214d6978fd1}{\index{\-Index@{\-Index}!\-Descriptorbits@{\-Descriptorbits}}
+\index{\-Descriptorbits@{\-Descriptorbits}!Index@{\-Index}}
+\subsubsection[{\-Descriptorbits}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Index\-::\-Descriptorbits}}}\label{classIndex_ac11c8f73f786ae87d455b214d6978fd1}
+
+
+\-Number of bits per hash value. 
+
+\-Since histogram is converted to binary hash, size of histogram is equivalent to bits\-Per\-Hash. \hypertarget{classIndex_a10d91af933c37e605b1d9bd1a3995f8c}{\index{\-Index@{\-Index}!image\-Names@{image\-Names}}
+\index{image\-Names@{image\-Names}!Index@{\-Index}}
+\subsubsection[{image\-Names}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$ {\bf \-Index\-::image\-Names}}}\label{classIndex_a10d91af933c37e605b1d9bd1a3995f8c}
+
+
+\-Its consist of image names of all the images in database. 
+
+\-This will be used later to retrieve the image from database. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/priyanka/\-Dataset25/src/db/\hyperlink{Index_8h}{\-Index.\-h}\item 
+/home/priyanka/\-Dataset25/src/db/\-Index.\-cpp\end{DoxyCompactItemize}
